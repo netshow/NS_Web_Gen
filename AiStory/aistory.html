@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryBee Style Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet" />
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    /* Reset and base styles */
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff5e6;
+      color: #2c2c2c;
+    }
+
+    :root {
+      --font-redressed: 'Redressed';
+    }
+
+   /* General Reset for box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+height: 5rem;
+background: #0D0C15;
+flex-wrap: wrap;
+}
+
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+color: wheat;
+}
+
+.nav-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+}
+
+.nav-links a {
+text-decoration: none;
+color: wheat;
+}
+
+.auth-buttons {
+display: flex;
+gap: 10px;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.auth-buttons a {
+text-decoration: none;
+color: wheat;
+}
+
+.sign-in {
+background-color: #40cc88;
+color: white;
+border: none;
+padding: 8px 14px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+background: url('./bg-image.png') no-repeat center center/cover;
+}
+
+.hero_section {
+display: flex;
+align-items: center;
+/* justify-content: center; */
+height: 100vh;
+padding: 0 1rem;
+}
+
+.main_heading {
+text-align: start;
+width: 100%;
+max-width: 600px;
+padding-top: 60px;
+}
+
+h1 {
+font-size: 3rem;
+color: white;
+}
+
+.subheading {
+font-size: 1.2rem;
+color: white;
+margin-top: 10px;
+}
+
+.highlight {
+color: #7d2f2f;
+font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+.navbar {
+flex-direction: row;
+align-items: flex-start;
+padding: 1rem;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.nav-links,
+.auth-buttons {
+flex-direction: row;
+align-items: flex-start;
+width: auto;
+margin-top: 0.5rem;
+align-items: center;
+}
+
+.main_heading {
+max-width: 100%;
+text-align: center;
+}
+
+h1 {
+font-size: 2.25rem;
+}
+
+.subheading {
+font-size: 1rem;
+}
+}
+
+/* Toggle icon */
+.menu-toggle {
+display: none;
+font-size: 2rem;
+color: wheat;
+cursor: pointer;
+}
+
+/* Hide nav by default on mobile */
+@media (max-width: 575px) {
+.menu-toggle {
+display: block;
+}
+
+.nav-links,
+.auth-buttons {
+display: none;
+width: 100%;
+flex-direction: column;
+gap: 0.5rem;
+margin-top: 1rem;
+}
+
+.nav-links.active,
+.auth-buttons.active {
+display: flex;
+align-items: normal;
+margin-top: 25px;
+}
+}
+
+
+
+/* card section */
+/* Section background */
+.section_second {
+background-image: url('./bg-image2.png');
+background-position: center top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Typography */
+.title {
+font-family: var(--font-redressed), Georgia, serif;
+font-size: 2rem;
+color: white;
+}
+.subtitle {
+font-weight: bold;
+color: white;
+}
+
+/* Image */
+.image img {
+max-width: 100%;
+height: auto;
+}
+
+/* Cards */
+.cards {
+width: 100%;
+}
+
+.card {
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+color: #2a2a2a;
+transition: transform 0.3s ease;
+}
+
+.card.active {
+transform: scale(1.01);
+z-index: 1;
+}
+
+.card h5 {
+font-size: 1.2rem;
+font-weight: 600;
+color: #1c1c1c;
+margin-bottom: 0.5rem;
+}
+
+.card p {
+margin: 4px 0;
+line-height: 1.5;
+font-size: 0.95rem;
+color: #444;
+text-align: justify;
+}
+
+.icon {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+.card {
+text-align: center;
+}
+.icon {
+font-size: 3.5rem !important;
+margin-bottom: 0.5rem;
+}
+}
+    /* card section end*/
+
+
+/* last section */
+.bg_image_section_last {
+  background-image: url('./bg-image-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Story Generator Layout */
+.story_generator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Headline */
+.content-box h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Button Styling */
+button {
+  background-color: #40cc88;
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #36b877;
+}
+
+/* Story Box Styling */
+#story-box {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 1rem;
+  width: 100%;
+  white-space: pre-line;
+  min-height: 150px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .content-box {
+    padding: 20px;
+  }
+
+  .content-box h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* last section */
+
+
+/* Base Footer Styles */
+footer {
+  background-color: #0D0C15;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  flex: 1 1 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.social-icons {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #40CC88;
+}
+
+.footer-links,
+.contact-info,
+.newsletter {
+  flex: 1 1 250px;
+  text-align: left;
+}
+
+.footer-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #40CC88;
+}
+
+.contact-info h4,
+.newsletter h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #40CC88;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #34b278;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .contact-info,
+  .newsletter {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .newsletter form {
+    width: 100%;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🐝 AiStory</div>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Stories</a>
+      <a href="#">How it Works</a>
+      <a href="#">Impact</a>
+      <a href="#">Pricing</a>
+    </nav>
+  
+    <div class="auth-buttons" id="auth-buttons">
+      <a href="#">Sign Up</a>
+      <button class="sign-in">Sign In</button>
+    </div>
+  </header>
+  
+
+  <main class="hero">
+    <div class="container hero_section">
+      <div class="row">
+        <div class="col-md-12">
+    <div class="main_heading">
+      <h1>Generate creative stories for kids using <span class="highlight">AI</span></h1>
+      <p class="subheading">Fostering Imaginations: Crafting Stories for children using AI</p>
+    </div>
+  </div>
+</div>
+</div>
+  </main>
+
+
+  <div class="container-fluid section_second py-5">
+    <div class="container">
+      <div class="row justify-content-center align-items-center flex-column flex-lg-row">
+        <div class="image col-lg-6 col-md-10 mb-4 mb-md-0 text-center">
+          <img src="children-image.png" alt="Boy Reading Book" class="img-fluid">
+        </div>
+        <div class="content col-lg-6 col-md-12 text-white text-center text-md-start">
+          <div class="title mb-2">AI Stories for Learning & Imagination</div>
+          <div class="subtitle mb-4">Interactive storytelling that adapts to every child</div>
+  
+          <div class="cards">
+            <!-- Card 1 -->
+            <div class="card mb-4 p-3 d-flex flex-column flex-md-row align-items-center active">
+              <div class="flex-fill pe-md-3 mb-3 mb-md-0">
+                <div class="d-flex flex-column mb-2 align-items-center align-items-md-start">
+                  <span class="icon fs-3">💡</span>
+                  <h5 class="card-title">Grows With Your Child</h5>
+                </div>
+                <p>Interactive stories that grow with your child</p>
+                <p>From toddler concepts to complex narratives</p>
+                <p>Springboards for creativity and self-expression</p>
+              </div>
+              <div class="flex-shrink-0 text-center">
+                <img src="image1.png" alt="" class="img-fluid" style="max-width: 150px;">
+              </div>
+            </div>
+  
+            <!-- Card 2 -->
+            <div class="card mb-4 p-3 d-flex flex-column flex-md-row align-items-center">
+              <div class="flex-fill pe-md-3 mb-3 mb-md-0">
+                <div class="d-flex flex-column mb-2 align-items-center align-items-md-start">
+                  <span class="icon fs-3">⚙️</span>
+                  <h5 class="card-title">Personalized Learning</h5>
+                </div>
+                <p>Stories adapt to age and interests</p>
+                <p>Education blended with entertainment</p>
+                <p>Supports all developmental stages</p>
+              </div>
+              <div class="flex-shrink-0 text-center">
+                <img src="image2.png" alt="" class="img-fluid" style="max-width: 150px;">
+              </div>
+            </div>
+  
+            <!-- Card 3 -->
+            <div class="card mb-4 p-3 d-flex flex-column flex-md-row align-items-center">
+              <div class="flex-fill pe-md-3 mb-3 mb-md-0">
+                <div class="d-flex flex-column mb-2 align-items-center align-items-md-start">
+                  <span class="icon fs-3">📈</span>
+                  <h5 class="card-title">Grows With Your Child</h5>
+                </div>
+                <p>Age-appropriate content library</p>
+                <p>From picture stories to chapter books</p>
+                <p>Premium features for deeper learning</p>
+              </div>
+              <div class="flex-shrink-0 text-center">
+                <img src="image3.png" alt="" class="img-fluid" style="max-width: 150px;">
+              </div>
+            </div>
+  
+            <!-- Card 4 -->
+            <div class="card p-3 d-flex flex-column flex-md-row align-items-center">
+              <div class="flex-fill pe-md-3 mb-3 mb-md-0">
+                <div class="d-flex flex-column mb-2 align-items-center align-items-md-start">
+                  <span class="icon fs-3">🧠</span>
+                  <h5 class="card-title">Supports Development</h5>
+                </div>
+                <p>Essential learning concepts</p>
+                <p>Builds language skills</p>
+                <p>Enhances emotional intelligence</p>
+              </div>
+              <div class="flex-shrink-0 text-center">
+                <img src="image4.png" alt="" class="img-fluid" style="max-width: 150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="bg_image_section_last">
+  <div class="container story_generator">
+    <div class="content-box text-center">
+      <h1>AI Story Generator</h1>
+      <button onclick="generateStory()">Generate Story</button>
+      <div id="story-box">Click the button to generate a story...</div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="footer-container">
+    <!-- Logo Section -->
+    <div class="footer-logo">
+      🐝 AiStory
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h4>Contact Us</h4>
+      <p>Email: contact@yourdomain.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <h4>Subscribe to Our Newsletter</h4>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const characters = ["a lonely robot", "a brave girl", "a curious fox", "an old wizard"];
+  const settings = ["in a dark forest", "on Mars", "inside a dream", "at the edge of the universe"];
+  const problems = ["seeking a lost treasure", "escaping a storm", "trying to remember the past", "solving a mysterious riddle"];
+  const twists = ["suddenly, time froze", "a portal appeared", "they discovered a hidden power", "the world started to crumble"];
+
+  function getRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function generateStory() {
+    const character = getRandom(characters);
+    const setting = getRandom(settings);
+    const problem = getRandom(problems);
+    const twist = getRandom(twists);
+
+    const story = `Once upon a time, ${character} found themselves ${setting}. They were ${problem}. But then, ${twist}. What happened next would change everything.`;
+
+    document.getElementById("story-box").innerText = story;
+  }
+</script>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const authButtons = document.getElementById('auth-buttons');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    authButtons.classList.toggle('active');
+  });
+</script>
+
+
+
+</body>
+</html>

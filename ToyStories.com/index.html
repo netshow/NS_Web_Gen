@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- BOOTSTRAP CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>BedtimeFable.ai Hero</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0a0a23, #1a1a2e);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0d0d2b;
+      padding: 20px 80px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4a7a;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-actions a {
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+
+    .new-story {
+      background-color: #7b2ff7;
+      color: white;
+    }
+
+    .new-story:hover {
+      background-color: #612de1;
+    }
+
+    .login {
+      color: white;
+      border: 1px solid #fff;
+    }
+
+    .login:hover {
+      background-color: #fff;
+      color: #0d0d2b;
+    }
+
+
+
+    /* Toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul,
+  .nav-actions {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  nav ul.show,
+  .nav-actions.show {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a,
+  .nav-actions a {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+    .hero {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+      background: url('./landing-image.webp') no-repeat center;
+      background-size: cover;
+      height: 100vh;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+
+    .highlight-red {
+      color: #ff004f;
+    }
+
+    .subtext {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .cta {
+      margin-top: 40px;
+    }
+
+    .cta button {
+      background-color: #e5007d;
+      color: white;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: #c30069;
+    }
+
+    .phone-preview {
+      border-radius: 20px;
+      overflow: hidden;
+      transform: translateY(0px) rotate3d(0.666154, -0.55924, 0.493447, 16deg) scale(0.8);
+      opacity: 1;
+      box-shadow: 0 0 #0000 ,0 0 #0000  ,0 0 #0000 ,12px 13px 10px #000;
+    border-color: rgb(18 49 35 / 1);
+    border-width: 2px;
+    }
+
+    .phone-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .phone-preview {
+        display: none;
+      }
+    }
+
+    .video_section{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 #0000 ,0 0 #0000,0 0 #0000 ,0 0 #0000 ,0 25px 50px -12px #000;
+    }
+
+    .header{
+        text-align: center;
+    margin-top: 100px;
+    }
+    .header h1 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stories-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: hidden;
+            gap: 25px;
+            padding: 10px 5px 30px 5px;
+            scroll-behavior: smooth;
+        }
+
+        .story-card {
+            min-width: 280px;
+            height: 360px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .story-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .story-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+        }
+
+        .story-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .story-age {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .scroll-controls {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0px 15px 0px;
+            gap: 20px;
+        }
+
+        .scroll-button {
+            background-color: #ffffff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .scroll-button:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .scroll-button:active {
+            transform: scale(0.95);
+        }
+
+
+        h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        max-width: 700px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: white;
+    }
+
+    .image-container {
+        height: 220px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 2px solid #f5b042;
+    }
+
+    .feature-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+        color: white;
+        text-align: center;
+    }
+
+    .feature-desc {
+        font-size: 0.95rem;
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 220px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">🔥 AiStories.Com</div>
+      
+        <!-- Toggle Button for Mobile -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+      
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+          <li><a href="#">Free AiStories</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      
+        <!-- Nav Actions -->
+        <div class="nav-actions" id="nav-actions">
+          <a href="#" class="new-story">New story</a>
+          <a href="#" class="login">Login</a>
+        </div>
+      </nav>
+      
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Unlock <span class="highlight-red">your</span><br />
+        <span class="highlight-red">child's imagination</span> with AiStories.com
+      </h1>
+      <p class="subtext">
+        Create magical, personalized bedtime stories in seconds. Powered by AI, built with love — for parents, by parents.
+      </p>
+      <div class="cta">
+        <button>🌟 Start your adventure</button>
+      </div>
+    </div>
+    <div class="phone-preview">
+      <img src="mobile.webp" alt="Story Preview" />
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 ">
+            <video class="inset-x-0 mt-10 video_section aspect-video h-auto w-full rounded-[30px] border border-primary-foreground/10 shadow-2xl shadow-black md:w-3/4" src="https://pub-eb0c6a4ef3284747b4f92c743f0d1a47.r2.dev/landing-video.mp4" controls="" preload="metadata"><source src="https://pub-eb0c6a4ef3284747b4f92c743f0d1a47.r2.dev/landing-video.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="header">
+        <h1>Popular Stories</h1>
+        <p>Discover the most loved stories by our community. Share your own stories and let the magic begin!</p>
+    </div>
+
+    <div class="scroll-controls">
+        <button class="scroll-button" id="scrollLeft">←</button>
+        <button class="scroll-button" id="scrollRight">→</button>
+    </div>
+
+    <div class="stories-container" id="storiesContainer">
+        <div class="story-card" style="background-image: url('..//ToyStories.com/image.webp');">
+            <div class="story-info">
+                <div class="story-title">Droplet's Courageous Journey: A Raindrop's Purpose</div>
+                <div class="story-age">Age 1-3</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(1\).webp');">
+            <div class="story-info">
+                <div class="story-title">The Seasons Symphony: A Tale of Unity and Diversity</div>
+                <div class="story-age">Age 1-3</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(2\).webp');">
+            <div class="story-info">
+                <div class="story-title">Echo's Joyful Canyon Symphony</div>
+                <div class="story-age">Age 1-3</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(3\).webp');">
+            <div class="story-info">
+                <div class="story-title">Whispers of the Wind: A Tale of Harmony in the Ancient Forest</div>
+                <div class="story-age">Age 1-3</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(4\).webp');">
+            <div class="story-info">
+                <div class="story-title">The Cosmic Quest of Captain Star</div>
+                <div class="story-age">Age 4-6</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(5\).webp');">
+            <div class="story-info">
+                <div class="story-title">Lily's Garden Adventure</div>
+                <div class="story-age">Age 1-3</div>
+            </div>
+        </div>
+        <div class="story-card" style="background-image: url('../ToyStories.com/image\ \(6\).webp');">
+            <div class="story-info">
+                <div class="story-title">The Brave Little Tugboat</div>
+                <div class="story-age">Age 2-4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <header class="text-center mb-5">
+        <h1 class="text-warning">How it works</h1>
+        <p class="intro mx-auto">Unlock a world of imagination with Bedtimefable.ai! Our platform lets you co-create magical stories with your child, making bedtime a delightful adventure.</p>
+    </header>
+
+    <div class="row justify-content-center">
+        <!-- Feature 1 -->
+        <div class="col-md-6 col-lg-3">
+                <div class="image-container mb-3">
+                    <img src="../ToyStories.com/image1.webp" alt="Parent and child reading a magical book" class="feature-image">
+                </div>
+                <h2 class="feature-title">Imagination Ignited</h2>
+                <p class="feature-desc">Join forces with your child for a cozy bedtime story night!</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-6 col-lg-3">
+                <div class="image-container mb-3">
+                    <img src="../ToyStories.com/image2.webp" alt="Magical book with glowing pages" class="feature-image">
+                </div>
+                <h2 class="feature-title">Define the Tale</h2>
+                <p class="feature-desc">Shape the story, characters, setting, and message to create a narrative that's uniquely yours.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-6 col-lg-3">
+                <div class="image-container mb-3">
+                    <img src="../ToyStories.com/image3.webp" alt="Fantasy landscape with castle" class="feature-image">
+                </div>
+                <h2 class="feature-title">Choose Your Own Adventure</h2>
+                <p class="feature-desc">Let your child decide what happens next. The story is in their hands!</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-md-6 col-lg-3">
+                <div class="image-container mb-3">
+                    <img src="../ToyStories.com/image4.webp" alt="Magical island with glowing lantern" class="feature-image">
+                </div>
+                <h2 class="feature-title">Memories That Last</h2>
+                <p class="feature-desc">Create unforgettable moments with your child. Share your story with the world!</p>
+            </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h4 class="mb-3 text-warning">Create Your First Story</h4>
+        <input type="text" id="storyInput" class="form-control w-75 mx-auto mb-3" placeholder="Enter your story idea...">
+        <button onclick="generateStory()" class="btn btn-warning btn-lg px-5 py-3">
+            Generate Story
+        </button>
+    </div>
+    
+    <!-- Story Output Section -->
+    <div id="storyOutput" class="mt-4 text-start d-none p-4 bg-light text-black rounded shadow"></div>
+
+</div>
+
+<footer class="text-white pt-4 pb-3" style="border-top: 1px solid #f5b042;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- About -->
+        <div class="col-md-4 mb-3">
+          <h5>About Us</h5>
+          <p>We provide top-notch solutions for your digital needs. Let's build something great together.</p>
+        </div>
+  
+        <!-- Links -->
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p>Email: support@example.com</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+      </div>
+  
+      <hr/>
+      <div class="text-center">
+        <small>&copy; 2025 Your Company. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollLeftBtn = document.getElementById('scrollLeft');
+        const scrollRightBtn = document.getElementById('scrollRight');
+        
+
+        // Handle scroll buttons
+        scrollLeftBtn.addEventListener('click', () => {
+            storiesContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            storiesContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        // Handle story card clicks
+        document.querySelectorAll('.story-card').forEach(card => {
+        });
+
+    });
+</script>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navActions = document.getElementById('nav-actions');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      navActions.classList.toggle('show');
+    });
+  </script>
+  
+
+  <script>
+    function generateStory() {
+        const command = document.getElementById("storyInput").value.trim();
+
+        if (command === "") {
+            alert("Please enter a story idea.");
+            return;
+        }
+
+        const story = `
+            <h3 class="text-warning">Your Story: ${command}</h3>
+            <p>
+                Once upon a time, in a land where ${command.toLowerCase()} was more than just a dream,
+                a magical adventure began. With every step, surprises unfolded and heroes rose.
+                The world sparkled with wonder as this tale brought joy and inspiration.
+            </p>
+            <p><strong>Moral:</strong> Every beautiful story begins with imagination — just like yours.</p>
+        `;
+
+        const outputDiv = document.getElementById("storyOutput");
+        outputDiv.innerHTML = story;
+        outputDiv.classList.remove("d-none");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Story Tale | Spark Your Child's Imagination!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo-character.png" alt="AI Story Tale Logo Character" class="logo-char-img">
+                <!-- Suggested: images/logo-character.svg -->
+                <span>AI Story Tales</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Magic Features</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Happy Readers</a></li>
+                <li class="nav-item"><a href="#generate-story" class="nav-btn btn-sparkle">Create Story! <i class="fas fa-magic-sparkles"></i></a></li>
+            </ul>
+            <div class="nav-icon" id="nav-toggler">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Character (Global) -->
+    <div class="animated-character-global">
+        <img src="images/animated-pal.png" alt="Friendly Mascot Bouncing">
+        <!-- Suggested: images/animated-pal.gif -->
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-background-elements">
+            <div class="star star1"></div>
+            <div class="star star2"></div>
+            <div class="star star3"></div>
+            <div class="cloud cloud1"><img src="images/fluffy_cloud.png" alt="Fluffy Cloud"></div>
+            <div class="cloud cloud2"><img src="images/fluffy_cloud.png" alt="Fluffy Cloud"></div>
+        </div>
+        <div class="section-content-wrapper">
+            <div class="hero-flex-container">
+                <div class="hero-content animate-on-scroll">
+                    <h1>Spark Your Child's <br><span>Imagination!</span></h1>
+                    <p>Create wonderful, personalized stories with friendly characters and magical adventures. Let's make storytime unforgettable!</p>
+                    <a href="#generate-story" class="btn btn-primary btn-large hero-cta btn-bounce">Start Your Adventure <i class="fas fa-rocket"></i></a>
+                </div>
+                <div class="hero-image-container animate-on-scroll animation-delay-200">
+                    <img src="images/hero-main-illustration.png" alt="Happy kids reading with cartoon creatures">
+                    <!-- Suggested: images/hero-main-illustration.png -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="content-section">
+            <div class="section-content-wrapper">
+                <h2 class="animate-on-scroll">How It Works: <span>Easy Peasy!</span></h2>
+                <div class="steps-container">
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-icon-img">
+                            <img src="images/setup_fun.png" alt="Cartoon Pencil and Cog Icon">
+                            <!-- Suggested: images/how-it-works-step1.svg -->
+                        </div>
+                        <h3>1. Setup Fun!</h3>
+                        <p>Pick a language, cool voice, and story style. It's like choosing your art supplies!</p>
+                    </div>
+                    <div class="step-card animate-on-scroll animation-delay-200">
+                        <div class="step-icon-img">
+                            <img src="images/choose_you_crew.png" alt="Cartoon Book with Stars Icon">
+                            <!-- Suggested: images/how-it-works-step2.svg -->
+                        </div>
+                        <h3>2. Choose Your Crew!</h3>
+                        <p>Select a story theme, brave heroes, silly items, and magical places!</p>
+                    </div>
+                    <div class="step-card animate-on-scroll animation-delay-400">
+                        <div class="step-icon-img">
+                            <img src="images/cartoon_magic.png" alt="Cartoon Magic Wand Icon">
+                            <!-- Suggested: images/how-it-works-step3.svg -->
+                        </div>
+                        <h3>3. Story Magic!</h3>
+                        <p>Our AI storyteller creates a unique tale just for you. Get ready to giggle!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generate Story Section -->
+        <section id="generate-story" class="content-section generate-story-section">
+            <!-- No section-content-wrapper here as story-generator-container handles its own max-width -->
+            <div class="story-generator-container">
+                <header>
+                    <h2 class="animate-on-scroll">Let's Build Your <span>Awesome</span> Story!</h2>
+                </header>
+                <main>
+                    <!-- Screen 1: Setup -->
+                    <div id="screen-1-setup" class="screen active-screen">
+                        <h3>Step 1: Story Flavors!</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="language">Language Like...</label>
+                                <select id="language">
+                                    <option value="english">English (Pirate Speak?)</option>
+                                    <option value="spanish">Español (Fiesta Time!)</option>
+                                    <option value="french">Français (Ooh La La!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chapters">How Many Adventures?</label>
+                                <select id="chapters">
+                                    <option value="1">1 Big Adventure!</option>
+                                    <option value="2">2 Super Adventures!</option>
+                                    <option value="3">3 Epic Adventures!</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="voice-provider">Storyteller Voice</label>
+                                <select id="voice-provider">
+                                    <option value="openai">Friendly Robot (OpenAI)</option>
+                                    <option value="google">Cheerful Helper (Google)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="image-style">Picture Style</label>
+                                <select id="image-style">
+                                    <option value="default">Colorful Cartoon</option>
+                                    <option value="storybook">Storybook Classic</option>
+                                    <option value="doodle">Cute Doodles</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="voice-name">Pick a Voice Pal!</label>
+                                <select id="voice-name">
+                                    <option value="alloy">Alloy (Adventurous)</option>
+                                    <option value="echo">Echo (Playful)</option>
+                                    <option value="fable">Fable (Storyteller)</option>
+                                </select>
+                            </div>
+                            <div class="form-group audio-player-group">
+                                <label>Hear Your Pal!</label>
+                                <audio controls>
+                                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                                    Your browser does not support the audio.
+                                </audio>
+                            </div>
+                        </div>
+                        <button id="btn-new-story" class="btn btn-primary btn-full-width btn-wobble">Next: Story Type! <span class="arrow">→</span></button>
+                    </div>
+
+                    <!-- Screen 2: Genre -->
+                    <div id="screen-2-genre" class="screen">
+                        <h3>Step 2: What Kind of Fun?</h3>
+                        <p class="selection-limit">* Pick 1 favorite type!</p>
+                        <div class="options-grid" id="genre-options"></div>
+                        <div class="navigation-buttons">
+                            <button class="btn btn-secondary btn-back" data-target="screen-1-setup"><span class="arrow">←</span> Oops, Go Back!</button>
+                            <button class="btn btn-primary btn-next" data-target="screen-3-characters">Next: Choose Heroes! <span class="arrow">→</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Screen 3: Characters -->
+                    <div id="screen-3-characters" class="screen">
+                        <h3>Step 3: Who's in the Story?</h3>
+                        <p class="selection-limit">* Pick up to 4 pals!</p>
+                        <div class="options-grid" id="character-options"></div>
+                        <div class="navigation-buttons">
+                            <button class="btn btn-secondary btn-back" data-target="screen-2-genre"><span class="arrow">←</span> Change Story Type</button>
+                            <button class="btn btn-primary btn-next" data-target="screen-4-ideas">Next: Magical Items! <span class="arrow">→</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Screen 4: Ideas -->
+                    <div id="screen-4-ideas" class="screen">
+                        <h3>Step 4: What Cool Stuff is There?</h3>
+                        <p class="selection-limit">* Pick up to 4 cool things!</p>
+                        <div class="options-grid" id="idea-options"></div>
+                        <div class="navigation-buttons">
+                            <button class="btn btn-secondary btn-back" data-target="screen-3-characters"><span class="arrow">←</span> Change Heroes</button>
+                            <button class="btn btn-primary btn-next" data-target="screen-5-settings">Next: Where To Go? <span class="arrow">→</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Screen 5: Settings -->
+                    <div id="screen-5-settings" class="screen">
+                        <h3>Step 5: Where Does It Happen?</h3>
+                        <p class="selection-limit">* Pick up to 2 amazing places!</p>
+                        <div class="options-grid" id="setting-options"></div>
+                        <div class="navigation-buttons">
+                            <button class="btn btn-secondary btn-back" data-target="screen-4-ideas"><span class="arrow">←</span> Change Items</button>
+                            <button id="btn-generate-prompt" class="btn btn-primary btn-next" data-target="screen-6-prompt">Last Check! <span class="arrow">→</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Screen 6: Prompt Review -->
+                    <div id="screen-6-prompt" class="screen">
+                        <h3>Is This Your Super Story Plan?</h3>
+                        <div id="prompt-display" class="prompt-box"></div>
+                        <div class="netshow-logo-container">
+                             <img src="images/netshow_toy.png" alt="NetShow Logo - Cartoon Style" class="netshow-logo">
+                             <!-- Suggested: images/netshow-logo-cartoon.png -->
+                        </div>
+                        <div class="navigation-buttons">
+                            <button class="btn btn-secondary btn-back" data-target="screen-5-settings"><span class="arrow">←</span> One More Change!</button>
+                            <button id="btn-generate-story-final" class="btn btn-success btn-launch">Create My Story! <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Screen 7: Story Output -->
+                    <div id="screen-7-story-output" class="screen">
+                        <h3>Woohoo! Your Story is Ready!</h3>
+                        <div id="story-content" class="story-box"></div>
+                        <button id="btn-start-over" class="btn btn-primary btn-yay">Make Another! <i class="fas fa-redo-alt"></i></button>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- Magic Features Section -->
+        <section id="features" class="content-section features-section">
+            <div class="section-content-wrapper">
+                <h2 class="animate-on-scroll">Our <span>Super Duper</span> Features!</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-img">
+                            <img src="images/friendly_kid.png" alt="Smiling Kid Icon">
+                            <!-- Suggested: images/feature-kid-friendly.svg -->
+                        </div>
+                        <h3>Always Kid-Safe!</h3>
+                        <p>Every story is full of smiles, giggles, and positive vibes.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll animation-delay-100">
+                        <div class="feature-icon-img">
+                            <img src="images/crayons.png" alt="Colorful Crayons Icon">
+                            <!-- Suggested: images/feature-customizable.svg -->
+                        </div>
+                        <h3>You're The Boss!</h3>
+                        <p>Pick everything! Heroes, places, and silly things they find.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll animation-delay-200">
+                        <div class="feature-icon-img">
+                            <img src="images/microphone_music.png" alt="Microphone with Music Notes Icon">
+                            <!-- Suggested: images/feature-narration.svg -->
+                        </div>
+                        <h3>Fun Voices!</h3>
+                        <p>Hear your story told by friendly, silly, and exciting voices.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll animation-delay-300">
+                        <div class="feature-icon-img">
+                            <img src="images/brain.png" alt="Brain with Open Book Icon">
+                            <!-- Suggested: images/feature-educational.svg -->
+                        </div>
+                        <h3>Learn & Play!</h3>
+                        <p>Boosts imagination, reading, and creative thinking. Shhh, it's fun learning!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="content-section testimonials-section">
+            <div class="section-content-wrapper">
+                <h2 class="animate-on-scroll">What <span>Happy Campers</span> Say!</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-avatar">
+                            <img src="images/lion.png" alt="Cartoon Lion Avatar">
+                            <!-- Suggested: images/avatar-lion.png -->
+                        </div>
+                        <p>"My little lion roars with laughter at every story! Best bedtime routine ever!"</p>
+                        <span class="testimonial-author">- Leo's Mom</span>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll animation-delay-200">
+                        <div class="testimonial-avatar">
+                            <img src="images/bear.png" alt="Cartoon Bear Avatar">
+                            <!-- Suggested: images/avatar-bear.png -->
+                        </div>
+                        <p>"The 'BFFs' stories are a big hit with my daughter and her best bear friend. So cute!"</p>
+                        <span class="testimonial-author">- Bella's Dad</span>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll animation-delay-400">
+                        <div class="testimonial-avatar">
+                            <img src="images/rabit.png" alt="Cartoon Rabbit Avatar">
+                            <!-- Suggested: images/avatar-rabbit.png -->
+                        </div>
+                        <p>"We love making stories about brave bunnies! It's super easy and so much fun for my classroom."</p>
+                        <span class="testimonial-author">- Ms. Rosie (Teacher)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-character">
+            <img src="images/waving_fox.png" alt="Friendly waving fox character">
+            <!-- Suggested: images/footer-waving-character.png -->
+        </div>
+        <div class="footer-content">
+            <p>© <span id="current-year"></span> AI Story Tale. Made with <i class="fas fa-heart" style="color: #FF6B6B;"></i> and lots of giggles!</p>
+            <div class="footer-links">
+                <a href="#">Secret Parent Portal (Privacy)</a> | <a href="#">Fun Rules (Terms)</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

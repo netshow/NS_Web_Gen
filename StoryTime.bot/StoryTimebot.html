@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Time .bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Fredoka', sans-serif;
+      }
+
+      .drop-shadow-lg{
+        .drop-shadow-lg {
+    --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-yellow-50 to-blue-50 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Story<span class="text-yellow-500">Time</span>.bot</h1>
+        <a href="#generate" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Generate a Story</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-16 px-6 bg-gradient-to-tr from-yellow-100 to-blue-100">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-blue-700  drop-shadow-lg">Create Magical Stories with AI ✨</h2>
+        <p class="text-lg text-gray-700 mb-6">Just enter a few words and let our smart AI craft a unique, fun-filled adventure story for you or your kids.</p>
+        <a href="#generate" class="bg-yellow-400 text-white font-bold px-6 py-3 rounded-full text-lg hover:bg-yellow-500 transition">Start Generating</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-blue-700 mb-10">How It Works</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div class="bg-yellow-100 p-6 rounded-xl shadow">
+            <img src="https://img.icons8.com/color/96/idea-sharing.png" alt="idea" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">1. Give an Idea</h4>
+            <p>Type in a character, setting, or story idea you'd like to explore.</p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-xl shadow">
+            <img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="ai" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">2. AI Writes It</h4>
+            <p>Our advanced AI creates a beautiful and fun story within seconds!</p>
+          </div>
+          <div class="bg-pink-100 p-6 rounded-xl shadow">
+            <img src="https://img.icons8.com/color/96/book-reading.png" alt="read" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">3. Read & Share</h4>
+            <p>Read your story aloud, download it, or share it with your friends and family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section id="generate" class="py-16 px-6 bg-gradient-to-bl from-pink-50 to-yellow-50">
+      <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-bold text-center text-blue-700 mb-6">Generate Your Story</h3>
+        <div class="space-y-4">
+          <input type="text" id="character" placeholder="Main Character" class="w-full p-3 border border-gray-300 rounded-lg" />
+          <input type="text" id="setting" placeholder="Story Setting" class="w-full p-3 border border-gray-300 rounded-lg" />
+          <textarea id="idea" rows="4" placeholder="Describe your story idea..." class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+          <button onclick="generateStory()" class="w-full bg-blue-500 text-white py-3 rounded-full font-bold hover:bg-blue-600 transition">Generate Story</button>
+        </div>
+        <div id="storyResult" class="mt-6 hidden bg-yellow-100 p-4 rounded-lg">
+          <h4 class="text-lg font-bold mb-2 text-blue-700">Your AI Story:</h4>
+          <p id="storyText" class="text-gray-800"></p>
+          <button onclick="readStory()" class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">🔊 Read Aloud</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 border-t mt-10 text-sm text-gray-600">
+      © 2025 StoryTime AI — Created for dreamers.
+    </footer>
+
+    <script>
+      function generateStory() {
+        const character = document.getElementById("character").value || "a brave explorer";
+        const setting = document.getElementById("setting").value || "a magical land";
+        const idea = document.getElementById("idea").value || "an exciting journey full of surprises";
+
+        const story = `Once upon a time, ${character} traveled to ${setting}. There, they discovered ${idea}. With courage and curiosity, they embarked on an unforgettable adventure that would change their world forever.`;
+
+        document.getElementById("storyText").textContent = story;
+        document.getElementById("storyResult").classList.remove("hidden");
+      }
+
+
+      function readStory() {
+        const story = document.getElementById("storyText").textContent;
+        const utterance = new SpeechSynthesisUtterance(story);
+        utterance.rate = 1;
+        utterance.pitch = 1.2;
+        speechSynthesis.speak(utterance);
+      }
+    </script>
+
+  </body>
+</html>

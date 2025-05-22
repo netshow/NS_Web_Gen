@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryWizard - AI Stories for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Story<span>Wizard</span></h1>
+                <div class="magic-wand">
+                    <div class="wand-star"></div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="#try-it">Try It!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Magical Stories Created Just For You!</h1>
+                <p>Watch as our AI wizard brings your imagination to life with personalized stories for children of all ages.</p>
+                <button class="cta-button" id="create-story-btn">Create Your Story</button>
+            </div>
+            <div class="hero-image">
+                <div class="cartoon-character">
+                    <div class="character-body">
+                        <div class="character-face">
+                            <div class="eyes">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                            </div>
+                            <div class="mouth"></div>
+                        </div>
+                        <div class="character-book">
+                            <div class="book-page"></div>
+                        </div>
+                    </div>
+                    <div class="speech-bubble">
+                        <p>Let's create a story!</p>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="element book"></div>
+                    <div class="element wand"></div>
+                    <div class="element star star1"></div>
+                    <div class="element star star2"></div>
+                    <div class="element star star3"></div>
+                    <div class="element cloud cloud1"></div>
+                    <div class="element cloud cloud2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>How Our Magic Works</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon imagination"></div>
+                    <h3>Spark Imagination</h3>
+                    <p>Tell us what you like, and our AI will create a unique story world just for you!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon personalize"></div>
+                    <h3>Personalized Adventures</h3>
+                    <p>Add your name and friends to become the heroes of your very own story!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon educational"></div>
+                    <h3>Learn While Having Fun</h3>
+                    <p>Our stories can teach valuable lessons while keeping kids entertained.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blob-divider">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f0ebff" d="M0,192L60,176C120,160,240,128,360,138.7C480,149,600,203,720,208C840,213,960,171,1080,149.3C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="examples" class="story-examples">
+        <div class="container">
+            <h2>Story Examples</h2>
+            <div class="story-carousel">
+                <div class="story-card active">
+                    <div class="story-character dragon"></div>
+                    <h3>"The Dragon's New Friend"</h3>
+                    <p>Once upon a time, there was a lonely dragon named Sparky who lived in a cave on top of the highest mountain...</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-character astronaut"></div>
+                    <h3>"Space Adventures with Captain Zoom"</h3>
+                    <p>Captain Zoom and her trusty robot companion Beep were exploring the rings of Saturn when they discovered a mysterious glowing object...</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-character forest"></div>
+                    <h3>"The Magical Forest"</h3>
+                    <p>Deep in the heart of the Whispering Woods, there lived a family of talking animals who protected a secret magical spring...</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prev-story">Previous</button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button id="next-story">Next</button>
+            </div>
+        </div>
+        <div class="curve-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="try-it" class="story-generator">
+        <div class="container">
+            <h2>Create Your Own Story!</h2>
+            <div class="generator-wrapper">
+                <div class="generator-form">
+                    <div class="form-group">
+                        <label for="character-name">Main Character's Name:</label>
+                        <input type="text" id="character-name" placeholder="Enter a name">
+                    </div>
+                    <div class="form-group">
+                        <label for="story-theme">Story Theme:</label>
+                        <select id="story-theme">
+                            <option value="fantasy">Fantasy Adventure</option>
+                            <option value="space">Space Exploration</option>
+                            <option value="animals">Talking Animals</option>
+                            <option value="underwater">Underwater Journey</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age-range">Age Range:</label>
+                        <select id="age-range">
+                            <option value="3-5">3-5 years</option>
+                            <option value="6-8">6-8 years</option>
+                            <option value="9-12">9-12 years</option>
+                        </select>
+                    </div>
+                    <button class="generate-button" id="generate-btn">Generate Story</button>
+                </div>
+                <div class="story-result" id="story-result">
+                    <h3>Your story will appear here...</h3>
+                    <p class="placeholder-text">Fill out the form and click "Generate Story" to see the magic happen!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Parents & Kids Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar mom"></div>
+                    <div class="quote">"My daughter can't get enough of these stories! She asks for a new one every night before bed."</div>
+                    <div class="author">- Sarah, Mom of 6-year-old</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar boy"></div>
+                    <div class="quote">"I love that I can be a superhero in my own story! It's so cool!"</div>
+                    <div class="author">- Ethan, 8 years old</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar dad"></div>
+                    <div class="quote">"The educational themes are subtly woven into fun adventures. My kids learn without even realizing it!"</div>
+                    <div class="author">- Michael, Dad of twins</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#6a11cb" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,90.7C672,85,768,107,864,144C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Story<span>Wizard</span></h2>
+                    <p>Magical AI stories for children</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#try-it">Try It!</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: hello@storywizard.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StoryWizard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

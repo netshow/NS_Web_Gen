@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyStroy - AI Stories for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/toystroy-logo.png" alt="ToyStroy Logo">
+                <h1>ToyStroy</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#try-now" class="btn-primary">Try Now</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="animated-text">Magical AI Stories <br>For Curious Kids</h1>
+                <p>Create personalized adventures with your child's favorite characters, settings, and magical items!</p>
+                <div class="hero-buttons">
+                    <a href="#try-now" class="btn-primary pulse">Create Your Story</a>
+                    <a href="#how-it-works" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating">
+                    <img src="images/hero-character.png" alt="Wizard Character" class="wizard">
+                </div>
+                <div class="magic-particles"></div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <img src="images/step1-setup.png" alt="Step 1: Choose your settings" class="step-image">
+                        <h3>Choose Your Settings</h3>
+                        <p>Select language, voice, and image style for your story</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <img src="images/step2-genre.png" alt="Step 2: Pick a story genre" class="step-image">
+                        <h3>Pick a Story Genre</h3>
+                        <p>Adventure, BFF's, Bedtime Story, and many more!</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <img src="images/step3-characters.png" alt="Step 3: Select characters" class="step-image">
+                        <h3>Select Characters</h3>
+                        <p>Choose up to 4 characters for your story</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <img src="images/step4-items.png" alt="Step 4: Add magical items" class="step-image">
+                        <h3>Add Magical Items</h3>
+                        <p>Include special items to make your story unique</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <img src="images/step5-generate.png" alt="Step 5: Generate your story" class="step-image">
+                        <h3>Generate Your Story</h3>
+                        <p>Our AI creates a unique story just for you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story-creator" class="interactive-demo">
+            <h2>Try Our Story Creator</h2>
+            <div class="creator-container">
+                <div class="creator-window">
+                    <div class="creator-header">
+                        <h3>ToyStroy - AI Story Time</h3>
+                    </div>
+                    <div class="creator-content">
+                        <div class="step-indicator">
+                            <div class="indicator active" data-step="1"></div>
+                            <div class="indicator" data-step="2"></div>
+                            <div class="indicator" data-step="3"></div>
+                            <div class="indicator" data-step="4"></div>
+                            <div class="indicator" data-step="5"></div>
+                        </div>
+                        
+                        <div class="creator-step active" id="step1">
+                            <h3>Your Story - Step 1</h3>
+                            <div class="form-group">
+                                <label>Select Your Language</label>
+                                <div class="select-wrapper">
+                                    <select id="language">
+                                        <option value="english">English</option>
+                                        <option value="spanish">Spanish</option>
+                                        <option value="french">French</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Voice Provider</label>
+                                <div class="select-wrapper">
+                                    <select id="voice">
+                                        <option value="alloy">OpenAI - Alloy</option>
+                                        <option value="echo">OpenAI - Echo</option>
+                                        <option value="nova">OpenAI - Nova</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Select your image style</label>
+                                <div class="select-wrapper">
+                                    <select id="style">
+                                        <option value="default">Default</option>
+                                        <option value="cartoon">Cartoon</option>
+                                        <option value="watercolor">Watercolor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn-next">New Story</button>
+                        </div>
+                        
+                        <div class="creator-step" id="step2">
+                            <h3>What Kind of Story Do You Want to Hear?</h3>
+                            <p class="selection-note">* Select maximum of 1 option</p>
+                            <div class="options-grid">
+                                <div class="option" data-value="adventure">
+                                    <img src="images/genre-adventure.png" alt="Adventure">
+                                    <span>Adventure</span>
+                                </div>
+                                <div class="option" data-value="bffs">
+                                    <img src="images/genre-bffs.png" alt="BFF's">
+                                    <span>BFF's</span>
+                                </div>
+                                <div class="option" data-value="bedtime">
+                                    <img src="images/genre-bedtime.png" alt="Bedtime Story">
+                                    <span>Bedtime Story</span>
+                                </div>
+                                <div class="option" data-value="magical">
+                                    <img src="images/genre-magical.png" alt="Magical Adventure">
+                                    <span>Magical Adventure</span>
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="btn-back">Back</button>
+                                <button class="btn-next">Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="creator-step" id="step3">
+                            <h3>Characters</h3>
+                            <p class="selection-note">* Select maximum of 4 options</p>
+                            <div class="options-grid">
+                                <div class="option" data-value="cowboy">
+                                    <img src="images/character-cowboy.png" alt="Cowboy">
+                                    <span>Cowboy</span>
+                                </div>
+                                <div class="option" data-value="clown">
+                                    <img src="images/character-clown.png" alt="Clown">
+                                    <span>Clown</span>
+                                </div>
+                                <div class="option" data-value="cowgirl">
+                                    <img src="images/character-cowgirl.png" alt="Cowgirl">
+                                    <span>Cowgirl</span>
+                                </div>
+                                <div class="option" data-value="horse">
+                                    <img src="images/character-horse.png" alt="Horse">
+                                    <span>Horse</span>
+                                </div>
+                                <div class="option" data-value="dragon">
+                                    <img src="images/character-dragon.png" alt="Dragon">
+                                    <span>Dragon</span>
+                                </div>
+                                <div class="option" data-value="fairy">
+                                    <img src="images/character-fairy.png" alt="Fairy">
+                                    <span>Fairy</span>
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="btn-back">Back</button>
+                                <button class="btn-next">Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="creator-step" id="step4">
+                            <h3>Ideas</h3>
+                            <p class="selection-note">* Select maximum of 4 options</p>
+                            <div class="options-grid">
+                                <div class="option" data-value="crystal-ball">
+                                    <img src="images/item-crystal-ball.png" alt="Crystal Ball">
+                                    <span>Crystal Ball</span>
+                                </div>
+                                <div class="option" data-value="dragon-egg">
+                                    <img src="images/item-dragon-egg.png" alt="Dragon Egg">
+                                    <span>Dragon Egg</span>
+                                </div>
+                                <div class="option" data-value="fortune-cookie">
+                                    <img src="images/item-fortune-cookie.png" alt="Fortune Cookie">
+                                    <span>Fortune Cookie</span>
+                                </div>
+                                <div class="option" data-value="hamburger">
+                                    <img src="images/item-hamburger.png" alt="Hamburger">
+                                    <span>Hamburger</span>
+                                </div>
+                                <div class="option" data-value="magic-wand">
+                                    <img src="images/item-magic-wand.png" alt="Magic Wand">
+                                    <span>Magic Wand</span>
+                                </div>
+                                <div class="option" data-value="treasure-map">
+                                    <img src="images/item-treasure-map.png" alt="Treasure Map">
+                                    <span>Treasure Map</span>
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="btn-back">Back</button>
+                                <button class="btn-next">Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="creator-step" id="step5">
+                            <h3>Settings</h3>
+                            <p class="selection-note">* Select maximum of 2 options</p>
+                            <div class="options-grid">
+                                <div class="option" data-value="atlantis">
+                                    <img src="images/setting-atlantis.png" alt="Atlantis">
+                                    <span>Atlantis</span>
+                                </div>
+                                <div class="option" data-value="ghost-town">
+                                    <img src="images/setting-ghost-town.png" alt="Ghost Town">
+                                    <span>Ghost Town</span>
+                                </div>
+                                <div class="option" data-value="castle">
+                                    <img src="images/setting-castle.png" alt="Castle">
+                                    <span>Castle</span>
+                                </div>
+                                <div class="option" data-value="space-station">
+                                    <img src="images/setting-space.png" alt="Space Station">
+                                    <span>Space Station</span>
+                                </div>
+                            </div>
+                            <div class="story-prompt">
+                                <h4>Your Story Prompt:</h4>
+                                <div class="prompt-text" id="storyPrompt">
+                                    Please select options to generate your story prompt.
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="btn-back">Back</button>
+                                <button class="btn-generate">Generate Story</button>
+                            </div>
+                        </div>
+                        
+                        <div class="creator-step" id="result">
+                            <h3>Your Story is Ready!</h3>
+                            <div class="story-result">
+                                <div class="story-loading">
+                                    <div class="loading-animation">
+                                        <div class="book">
+                                            <div class="book__page"></div>
+                                            <div class="book__page"></div>
+                                            <div class="book__page"></div>
+                                        </div>
+                                    </div>
+                                    <p>Creating your magical story...</p>
+                                </div>
+                                <div class="story-content" style="display: none;">
+                                    <h4 id="storyTitle">The Amazing Adventure</h4>
+                                    <div class="story-image">
+                                        <img src="images/story-result.png" alt="Story illustration">
+                                    </div>
+                                    <p id="storyText">Once upon a time in a magical land, there were four friends: a Cowboy, a Clown, a Cowgirl, and a Horse who lived in Atlantis. One day, they discovered a mysterious Crystal Ball. This was the beginning of an adventure they would never forget...</p>
+                                    <div class="story-controls">
+                                        <button class="btn-play">
+                                            <i class="play-icon"></i> Play
+                                        </button>
+                                        <button class="btn-pause" style="display: none;">
+                                            <i class="pause-icon"></i> Pause
+                                        </button>
+                                        <div class="audio-progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="btn-new-story">Create New Story</button>
+                                <button class="btn-save">Save Story</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="creator-mascot">
+                    <img src="images/mascot.png" alt="Storyteller character" class="bounce">
+                    <div class="speech-bubble">
+                        <p>Let's create a magical story together!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Magical Features</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/icon-personalized.png" alt="Personalized Stories">
+                    </div>
+                    <h3>Personalized Stories</h3>
+                    <p>Create stories with your child's favorite characters and settings</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/icon-voice.png" alt="Voice Narration">
+                    </div>
+                    <h3>Voice Narration</h3>
+                    <p>Listen to stories with high-quality AI voice narration</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/icon-illustrations.png" alt="Beautiful Illustrations">
+                    </div>
+                    <h3>Beautiful Illustrations</h3>
+                    <p>Each story comes with unique, colorful illustrations</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/icon-educational.png" alt="Educational Content">
+                    </div>
+                    <h3>Educational Content</h3>
+                    <p>Stories that entertain while teaching valuable lessons</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Parents Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="quote">"My daughter loves creating stories with her favorite characters. It's become our bedtime ritual!"</div>
+                    <div class="author">- Sarah, mom of 6-year-old</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The voice narration feature is amazing! My son listens to his stories over and over again."</div>
+                    <div class="author">- Michael, dad of 8-year-old</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"ToyStroy has sparked my twins' imagination like nothing else. They create the wildest adventures!"</div>
+                    <div class="author">- Emily, mom of 5-year-old twins</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="try-now" class="cta-section">
+            <div class="cta-content">
+                <h2>Start Creating Magical Stories Today!</h2>
+                <p>Join thousands of families creating unforgettable stories with ToyStroy</p>
+                <a href="#" class="btn-primary pulse">Get Started - It's Free!</a>
+            </div>
+            <div class="cta-image">
+                <img src="images/cta-characters.png" alt="Happy cartoon characters" class="floating">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/toystroy-logo.png" alt="ToyStroy Logo">
+                <h2>ToyStroy</h2>
+                <p>Magical AI Stories for Curious Kids</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon facebook" ><img src="images/facebook_logo.png" alt="facebook Logo"></a>
+                        <a href="#" class="social-icon twitter"><img src="images/twitter_icon.png" alt="twitter Logo"></a>
+                        <a href="#" class="social-icon instagram"><img src="images/instagram_icon.png" alt="instagram Logo"></a>
+                        <a href="#" class="social-icon youtube"><img src="images/youtube_icon.png" alt="youtube Logo"></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ToyStroy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
