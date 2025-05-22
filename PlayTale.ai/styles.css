@@ -3,12 +3,12 @@
     --font-secondary: 'Open Sans', sans-serif;
     --font-display: 'Fredoka One', cursive;
 
-    --color-bg: #FFF8E8; /* Soft cream */
-    --color-primary: #6A5ACD; /* Slate Blue */
-    --color-secondary: #FF8C00; /* Dark Orange */
-    --color-accent1: #FF69B4; /* Hot Pink */
-    --color-accent2: #3CB371; /* Medium Sea Green */
-    --color-text-dark: #333333;
+    --color-bg: #eef8f5; /* Light aqua */
+    --color-primary: #2a9d8f; /* Teal */
+    --color-secondary: #f4a261; /* Soft Orange */
+    --color-accent1: #e76f51; /* Coral */
+    --color-accent2: #264653; /* Deep Blue */
+    --color-text-dark: #2d2d2d;
     --color-text-light: #ffffff;
     --color-card-bg: #ffffff;
     
@@ -465,7 +465,7 @@ body {
 
 /* --- Features Section --- */
 #features {
-    background-color: #fff5e6; /* Light orangey-yellow */
+    background-color: #eaf7f6; /* Soft teal background */
 }
 .features-grid {
     display: grid;
@@ -498,6 +498,62 @@ body {
     font-size: 1.4rem;
     color: var(--color-primary);
     margin-bottom: 10px;
+}
+
+/* --- About Section --- */
+#about {
+    background-color: #ffffff;
+}
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* --- Testimonials Section --- */
+#testimonials {
+    background-color: #f0fbfa;
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.testimonial {
+    background: var(--color-card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow-light);
+    position: relative;
+}
+.testimonial::before,
+.testimonial::after {
+    font-size: 3rem;
+    color: var(--color-accent1);
+    position: absolute;
+}
+.testimonial::before { content: '“'; top: -10px; left: 10px; }
+.testimonial::after { content: '”'; bottom: -10px; right: 10px; }
+.testimonial .author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+/* --- Contact Section --- */
+#contact {
+    background-color: #fff5e6;
+    text-align: center;
+}
+#contact a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: var(--color-secondary);
 }
 
 /* --- Footer --- */
