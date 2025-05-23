@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunGames.ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Fredoka", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-green-50 to-indigo-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">Fun<span class="text-green-500">Games</span>.ai</h1>
+        <a href="#generator" class="bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition">Generate Idea</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-6 bg-gradient-to-tr from-green-100 to-indigo-100">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-indigo-700 drop-shadow-lg">Discover Endless Fun With AI 🎮</h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Create unique mini-games and challenges instantly. Enter a theme and watch our AI craft fun ideas for all ages.
+        </p>
+        <a href="#generator" class="bg-green-500 text-white font-bold px-6 py-3 rounded-full text-lg hover:bg-green-600 transition">Start Playing</a>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">How It Works</h3>
+        <div class="grid gap-10 text-center md:grid-cols-2 lg:grid-cols-4">
+          <div class="bg-green-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold mb-2">1. Pick a Theme</h4>
+            <p>Choose a topic or mood for your game. From space adventures to puzzle quests, anything goes.</p>
+          </div>
+          <div class="bg-indigo-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold mb-2">2. AI Designs It</h4>
+            <p>Our system generates exciting rules and objectives tailored to your theme.</p>
+          </div>
+          <div class="bg-purple-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold mb-2">3. Play & Share</h4>
+            <p>Enjoy the quick game on your own or challenge friends by sharing the idea.</p>
+          </div>
+          <div class="bg-yellow-100 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold mb-2">4. Repeat for More!</h4>
+            <p>Generate countless games and never run out of fun activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Idea Generator -->
+    <section id="generator" class="py-16 px-6 bg-gradient-to-bl from-purple-50 to-green-50">
+      <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6">Generate Your Game Idea</h3>
+        <div class="space-y-4">
+          <input type="text" id="theme" placeholder="Game Theme" class="w-full p-3 border border-gray-300 rounded-lg" />
+          <input type="text" id="players" placeholder="Number of Players" class="w-full p-3 border border-gray-300 rounded-lg" />
+          <textarea id="details" rows="4" placeholder="Describe any special requests..." class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+          <button onclick="generateGame()" class="w-full bg-indigo-500 text-white py-3 rounded-full font-bold hover:bg-indigo-600 transition">
+            Create Game Idea
+          </button>
+        </div>
+        <div id="gameResult" class="mt-6 hidden bg-green-100 p-4 rounded-lg">
+          <h4 class="text-lg font-bold mb-2 text-indigo-700">Your AI Game:</h4>
+          <p id="gameText" class="text-gray-800"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Why FunGames.ai?</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 rounded-lg shadow bg-indigo-50">
+            <h4 class="font-semibold text-lg mb-2">Instant Creativity</h4>
+            <p>Save time thinking up activities. Let AI hand you fresh ideas within seconds.</p>
+          </div>
+          <div class="p-6 rounded-lg shadow bg-purple-50">
+            <h4 class="font-semibold text-lg mb-2">Family Friendly</h4>
+            <p>Every suggestion is designed to be enjoyed by kids and adults alike.</p>
+          </div>
+          <div class="p-6 rounded-lg shadow bg-green-50">
+            <h4 class="font-semibold text-lg mb-2">Share Anywhere</h4>
+            <p>Send the game rules to friends or print them out for your next party.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sample Games -->
+    <section class="py-16 px-6 bg-gradient-to-br from-indigo-50 via-green-50 to-purple-50">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Sample Game Ideas</h3>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold text-lg mb-2">Color Hunt</h4>
+            <p>Players race around the house or yard to collect objects matching random colors chosen by the AI.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold text-lg mb-2">Rhyming Rumble</h4>
+            <p>Compete to come up with silly rhymes for AI generated words in under 10 seconds.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold text-lg mb-2">Emoji Charades</h4>
+            <p>Act out an AI generated phrase using only emoji cards as clues to get teammates guessing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-6 bg-gradient-to-tr from-indigo-50 to-purple-50" id="faq">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Frequently Asked Questions</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-semibold">Do I need to sign up?</h4>
+            <p>No sign-up is required. Just enter your theme and enjoy a game idea instantly.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold">Can I modify the game rules?</h4>
+            <p>Absolutely! The generated ideas are just a starting point. Feel free to adapt them.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold">Is it free?</h4>
+            <p>Yes, FunGames.ai is completely free for casual use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Join Us Section -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-3xl font-bold text-indigo-700 mb-4">Join the Fun</h3>
+        <p class="mb-6">Sign up to receive weekly mini-game ideas, updates, and challenges straight to your inbox.</p>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg mb-4" />
+        <button class="bg-indigo-500 text-white font-bold px-6 py-3 rounded-full hover:bg-indigo-600 transition">Notify Me</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 border-t mt-10 text-sm text-gray-600">© 2025 FunGames.ai — Let the games begin!</footer>
+
+    <script>
+      function generateGame() {
+        const theme = document.getElementById("theme").value || "a surprise theme";
+        const players = document.getElementById("players").value || "any number of players";
+        const details = document.getElementById("details").value || "simple rules and lots of laughter";
+
+        const game = `Create a game around ${theme}. It should work for ${players}, featuring ${details}. Enjoy a fun challenge and share your experience!`;
+
+        document.getElementById("gameText").textContent = game;
+        document.getElementById("gameResult").classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
