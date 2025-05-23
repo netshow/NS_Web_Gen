@@ -1,225 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FunGames.ai</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: "Fredoka", sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gradient-to-br from-green-50 to-indigo-50 text-gray-800">
-    <!-- Navbar -->
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-indigo-600">Fun<span class="text-green-500">Games</span>.ai</h1>
-        <a href="#generator" class="bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition">Generate Idea</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-primary: 'Nunito', sans-serif;
+      --font-display: 'Baloo 2', cursive;
+      --color-bg: #f0f9f0;
+      --color-primary: #4a7c59;
+      --color-secondary: #8d6748;
+      --color-accent: #c4a035;
+      --color-light: #ffffff;
+      --shadow-light: 0 4px 15px rgba(0,0,0,0.1);
+      --radius-main: 15px;
+    }
+    body {margin:0;font-family:var(--font-primary);color:#333;background:var(--color-bg);line-height:1.6;}
+    header {background:var(--color-primary);color:var(--color-light);position:fixed;width:100%;z-index:1000;}
+    header .container {display:flex;justify-content:space-between;align-items:center;padding:10px 20px;}
+    nav ul {list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;}
+    nav li {margin:0 10px;}
+    nav a {color:var(--color-light);text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;transition:background .3s;}
+    nav a:hover {background:var(--color-secondary);}
+    .container {max-width:1100px;margin:auto;}
+    h1,h2,h3 {font-family:var(--font-display);color:var(--color-primary);}
+    main {padding-top:70px;}
+    .hero {min-height:80vh;position:relative;color:var(--color-light);display:flex;align-items:center;justify-content:center;text-align:center;background:url('images/hero.jpg') center/cover no-repeat;}
+    .hero-overlay {position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:0;}
+    .hero-content {position:relative;z-index:1;padding:100px 20px 60px;}
+    .cta {display:inline-block;margin-top:20px;padding:12px 25px;background:var(--color-secondary);color:var(--color-light);text-decoration:none;border-radius:30px;font-weight:bold;box-shadow:var(--shadow-light);}
+    .section {padding:80px 20px;background:var(--color-light);}
+    .section:nth-of-type(even){background:#fcfcfc;}
+    .grid {display:grid;gap:20px;}
+    @media(min-width:700px){.grid-2{grid-template-columns:repeat(2,1fr);} .grid-3{grid-template-columns:repeat(3,1fr);} }
+    table {width:100%;border-collapse:collapse;margin-top:20px;}
+    th,td {border:1px solid #ccc;padding:8px;text-align:left;}
+    form input,form textarea {width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:5px;}
+    form button {padding:10px 20px;background:var(--color-primary);color:var(--color-light);border:none;border-radius:30px;cursor:pointer;}
+    footer {background:var(--color-primary);color:var(--color-light);text-align:center;padding:20px;}
+    .hero-shape-divider {position:absolute;bottom:0;left:0;width:100%;line-height:0;overflow:hidden;}
+    .hero-shape-divider svg {position:relative;display:block;width:calc(100% + 1.3px);height:75px;}
+    .hero-shape-divider .shape-fill {fill:var(--color-light);}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sustainable Living</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#guide">Getting Started</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero section">
+      <!-- Insert hero image here -->
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2>Welcome to Sustainable Living</h2>
+        <p>Embrace a lifestyle that nurtures our planet and creates a healthier future for everyone. Sustainable living is about making conscious choices—big and small—that reduce waste, save energy, and promote well-being. By adopting eco-friendly habits, you can conserve natural resources and support communities worldwide. Explore our guide to learn how you can start making meaningful changes today. Every step counts toward a greener tomorrow.</p>
+        <a href="#guide" class="cta">Start Your Journey</a>
       </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="text-center py-16 px-6 bg-gradient-to-tr from-green-100 to-indigo-100">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-indigo-700 drop-shadow-lg">Discover Endless Fun With AI 🎮</h2>
-        <p class="text-lg text-gray-700 mb-6">
-          Create unique mini-games and challenges instantly. Enter a theme and watch our AI craft fun ideas for all ages.
-        </p>
-        <a href="#generator" class="bg-green-500 text-white font-bold px-6 py-3 rounded-full text-lg hover:bg-green-600 transition">Start Playing</a>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">How It Works</h3>
-        <div class="grid gap-10 text-center md:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-green-100 p-6 rounded-xl shadow">
-            <h4 class="text-xl font-semibold mb-2">1. Pick a Theme</h4>
-            <p>Choose a topic or mood for your game. From space adventures to puzzle quests, anything goes.</p>
-          </div>
-          <div class="bg-indigo-100 p-6 rounded-xl shadow">
-            <h4 class="text-xl font-semibold mb-2">2. AI Designs It</h4>
-            <p>Our system generates exciting rules and objectives tailored to your theme.</p>
-          </div>
-          <div class="bg-purple-100 p-6 rounded-xl shadow">
-            <h4 class="text-xl font-semibold mb-2">3. Play & Share</h4>
-            <p>Enjoy the quick game on your own or challenge friends by sharing the idea.</p>
-          </div>
-          <div class="bg-yellow-100 p-6 rounded-xl shadow">
-            <h4 class="text-xl font-semibold mb-2">4. Repeat for More!</h4>
-            <p>Generate countless games and never run out of fun activities.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Game Idea Generator -->
-    <section id="generator" class="py-16 px-6 bg-gradient-to-bl from-purple-50 to-green-50">
-      <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
-        <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6">Generate Your Game Idea</h3>
-        <div class="space-y-4">
-          <input type="text" id="theme" placeholder="Game Theme" class="w-full p-3 border border-gray-300 rounded-lg" />
-          <input type="text" id="players" placeholder="Number of Players" class="w-full p-3 border border-gray-300 rounded-lg" />
-          <textarea id="details" rows="4" placeholder="Describe any special requests..." class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
-          <button onclick="generateGame()" class="w-full bg-indigo-500 text-white py-3 rounded-full font-bold hover:bg-indigo-600 transition">
-            Create Game Idea
-          </button>
-        </div>
-        <div id="gameResult" class="mt-6 hidden bg-green-100 p-4 rounded-lg">
-          <h4 class="text-lg font-bold mb-2 text-indigo-700">Your AI Game:</h4>
-          <p id="gameText" class="text-gray-800"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-5xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Why FunGames.ai?</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="p-6 rounded-lg shadow bg-indigo-50">
-            <h4 class="font-semibold text-lg mb-2">Instant Creativity</h4>
-            <p>Save time thinking up activities. Let AI hand you fresh ideas within seconds.</p>
-          </div>
-          <div class="p-6 rounded-lg shadow bg-purple-50">
-            <h4 class="font-semibold text-lg mb-2">Family Friendly</h4>
-            <p>Every suggestion is designed to be enjoyed by kids and adults alike.</p>
-          </div>
-          <div class="p-6 rounded-lg shadow bg-green-50">
-            <h4 class="font-semibold text-lg mb-2">Share Anywhere</h4>
-            <p>Send the game rules to friends or print them out for your next party.</p>
-          </div>
-        </div>
+      <div class="hero-shape-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31.74,900,50.5,975.21,70.6,1097.45,93.31,1200,97.94,1200,97.94V0H0V97.94C0,97.94,189.08,103.29,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
       </div>
     </section>
-    <!-- Game Categories Section -->
-    <section class="py-16 px-6 bg-gradient-to-r from-indigo-50 to-green-50">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Top Game Categories</h3>
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Puzzle Solvers</h4>
-            <p>Brain teasers, riddles, and logic quests that challenge players to think outside the box.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Adventure Trails</h4>
-            <p>Explore make-believe worlds and follow story-driven missions crafted by AI.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Speed Challenges</h4>
-            <p>Quick games that test reflexes and keep everyone on their toes.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Creative Mixers</h4>
-            <p>Activities that combine drawing, acting, and imagination for tons of laughs.</p>
-          </div>
-        </div>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Sustainable Living</h2>
+        <article>
+          <p>Sustainable living is a holistic approach to daily life that emphasizes balance with the natural environment. It involves reducing your ecological footprint through mindful consumption, energy efficiency, and thoughtful waste management. By choosing sustainable options, you help preserve ecosystems, cut greenhouse gas emissions, and protect biodiversity. Across the globe, communities embracing these practices are seeing significant benefits—from cleaner air and water to thriving local economies. The impact is tangible: according to recent studies, switching to renewable energy could cut global emissions by 60%, while recycling just one ton of paper saves 17 trees and 7,000 gallons of water. Sustainable living empowers individuals to create positive change, one choice at a time. Together, we can build a future where economic growth aligns with ecological well-being, ensuring a healthy planet for generations to come.</p>
+        </article>
       </div>
     </section>
-    <!-- Sample Games -->
-    <section class="py-16 px-6 bg-gradient-to-br from-indigo-50 via-green-50 to-purple-50">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Sample Game Ideas</h3>
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Color Hunt</h4>
-            <p>Players race around the house or yard to collect objects matching random colors chosen by the AI.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Rhyming Rumble</h4>
-            <p>Compete to come up with silly rhymes for AI generated words in under 10 seconds.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Emoji Charades</h4>
-            <p>Act out an AI generated phrase using only emoji cards as clues to get teammates guessing.</p>
-          </div>
-        </div>
+    <section id="guide" class="section">
+      <div class="container">
+        <h2>Getting Started Guide</h2>
+        <article>
+          <p>Beginning a sustainable lifestyle can feel overwhelming, but small steps add up quickly. Start by assessing your daily routines and identifying areas for improvement. Conserve energy by turning off lights when not in use, unplugging electronics, and opting for energy-efficient appliances. Reduce water consumption with shorter showers and efficient fixtures. Prioritize reusable items over disposable ones to cut down on waste. Support local businesses and farmers to reduce your carbon footprint and strengthen community ties. Most importantly, stay curious and open to learning—sustainability is a journey.</p>
+          <ul>
+            <li>Switch off unused lights and appliances</li>
+            <li>Use a reusable water bottle and shopping bags</li>
+            <li>Plan meals to avoid food waste</li>
+            <li>Choose products with minimal packaging</li>
+            <li>Walk or bike for short trips</li>
+            <li>Compost food scraps</li>
+            <li>Buy second-hand when possible</li>
+            <li>Learn about local recycling rules</li>
+            <li>Grow herbs or veggies at home</li>
+            <li>Share knowledge with friends and family</li>
+          </ul>
+        </article>
       </div>
     </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">What Players Say</h3>
-        <div class="space-y-8">
-          <div class="bg-indigo-50 p-6 rounded-lg shadow">
-            <p class="italic mb-2">"We tried a new game every night this week and the kids loved it!"</p>
-            <p class="text-right font-semibold">— Jamie L.</p>
-          </div>
-          <div class="bg-green-50 p-6 rounded-lg shadow">
-            <p class="italic mb-2">"The AI ideas spark so much creativity during our family gatherings."</p>
-            <p class="text-right font-semibold">— Priya S.</p>
-          </div>
-          <div class="bg-purple-50 p-6 rounded-lg shadow">
-            <p class="italic mb-2">"Perfect for quick party games when friends come over."</p>
-            <p class="text-right font-semibold">— Marco G.</p>
-          </div>
-        </div>
+    <section id="homes" class="section">
+      <div class="container">
+        <h2>Eco-Friendly Homes</h2>
+        <article>
+          <p>Transforming your home into an eco-friendly haven starts with smart design and responsible choices. Focus on improving energy efficiency through proper insulation, smart thermostats, and LED lighting. Water conservation is equally vital—install low-flow fixtures and fix leaks promptly to save countless gallons. When renovating, choose sustainable materials like reclaimed wood, recycled metal, and bamboo flooring. These small adjustments make a big difference in your household's environmental impact. For example, energy-efficient windows can lower heating costs by up to 25%, while rain barrels help collect water for gardens. Consider products such as solar-powered garden lights, smart plugs, energy-efficient appliances, water-saving showerheads, and compostable cleaning supplies.</p>
+        </article>
       </div>
     </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 px-6 bg-gradient-to-tr from-indigo-50 to-purple-50" id="faq">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-indigo-700 mb-10">Frequently Asked Questions</h3>
-        <div class="space-y-6">
-          <div>
-            <h4 class="font-semibold">Do I need to sign up?</h4>
-            <p>No sign-up is required. Just enter your theme and enjoy a game idea instantly.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold">Can I modify the game rules?</h4>
-            <p>Absolutely! The generated ideas are just a starting point. Feel free to adapt them.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold">Is it free?</h4>
-            <p>Yes, FunGames.ai is completely free for casual use.</p>
-          </div>
-        </div>
+    <section id="diet" class="section">
+      <div class="container">
+        <h2>Sustainable Diet</h2>
+        <article>
+          <p>Eating sustainably means choosing foods that are healthy for you and the planet. A plant-based diet rich in fruits, vegetables, legumes, and whole grains can significantly reduce your carbon footprint. Whenever possible, buy locally grown produce to support nearby farmers and cut down on transportation emissions. Minimizing food waste by planning meals and storing food properly also plays a crucial role. The table below compares the carbon footprints of common foods to help guide your choices.</p>
+          <table>
+            <tr><th>Food</th><th>CO₂ per kg</th></tr>
+            <tr><td>Beef</td><td>27 kg</td></tr>
+            <tr><td>Poultry</td><td>6 kg</td></tr>
+            <tr><td>Lentils</td><td>0.9 kg</td></tr>
+            <tr><td>Potatoes</td><td>0.3 kg</td></tr>
+          </table>
+        </article>
       </div>
     </section>
-    <!-- Join Us Section -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-3xl font-bold text-indigo-700 mb-4">Join the Fun</h3>
-        <p class="mb-6">Sign up to receive weekly mini-game ideas, updates, and challenges straight to your inbox.</p>
-        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg mb-4" />
-        <button class="bg-indigo-500 text-white font-bold px-6 py-3 rounded-full hover:bg-indigo-600 transition">Notify Me</button>
+    <section id="transport" class="section">
+      <div class="container">
+        <h2>Green Transportation</h2>
+        <article>
+          <p>Transportation is a major contributor to greenhouse gas emissions. Opting for low-impact travel modes makes a substantial difference. Biking produces virtually no emissions and keeps you active, though it may be less convenient for long distances. Electric vehicles offer a clean alternative to gasoline-powered cars, but initial costs and charging infrastructure vary by region. Public transit is an efficient way to move large numbers of people with fewer vehicles on the road, though schedules may be limiting. Weigh the pros and cons to find the best solution for your needs.</p>
+        </article>
       </div>
     </section>
-
-    <!-- Contact Us Section -->
-    <section class="py-16 px-6 bg-gradient-to-tr from-green-50 to-indigo-50">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-3xl font-bold text-indigo-700 mb-4">Get in Touch</h3>
-        <p class="mb-6">Have questions or suggestions? We'd love to hear from you.</p>
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg" />
-          <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg" />
-          <textarea rows="4" placeholder="Message" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
-          <button class="bg-indigo-500 text-white font-bold px-6 py-3 rounded-full hover:bg-indigo-600 transition">Send Message</button>
+    <section id="waste" class="section">
+      <div class="container">
+        <h2>Waste Reduction Tips</h2>
+        <article>
+          <p>Reducing waste begins with mindful consumption. Avoid single-use plastics and look for items that can be reused or recycled. Embrace a minimalist mindset by only purchasing what you truly need. Participate in local recycling programs and upcycle materials whenever possible. To kick-start your journey, try our seven-day zero-waste challenge: each day focuses on a new habit—from carrying a reusable cup to refusing plastic straws. By the end of the week, you'll see just how easy it is to curb waste.</p>
+          <ol>
+            <li>Carry a reusable bottle</li>
+            <li>Bring your own shopping bag</li>
+            <li>Refuse disposable cutlery</li>
+            <li>Compost food scraps</li>
+            <li>Repair rather than replace</li>
+            <li>Donate unused items</li>
+            <li>Share your progress with others</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+    <section id="compost" class="section">
+      <div class="container">
+        <h2>Composting 101</h2>
+        <article>
+          <p>Composting is nature's way of recycling. By turning food scraps and yard waste into nutrient-rich soil, you reduce landfill waste and enhance your garden. Set up a compost bin in a shady spot and layer green materials like vegetable peels with brown matter such as dried leaves. Keep the pile moist and turn it regularly for best results. Imagine a simple diagram with arrows showing the decomposition process—from kitchen waste to dark, crumbly compost. Items like fruit cores, eggshells, coffee grounds, yard trimmings, and shredded paper are perfect for composting.</p>
+        </article>
+      </div>
+    </section>
+    <section id="energy" class="section">
+      <div class="container">
+        <h2>Renewable Energy</h2>
+        <article>
+          <p>Transitioning to renewable energy sources helps combat climate change by reducing reliance on fossil fuels. Solar panels harness the sun's power and are increasingly affordable, while wind turbines capture energy from the breeze to generate electricity. Hydropower uses flowing water to create consistent power, though it requires specific geographic conditions. The table below outlines a basic comparison of efficiency and costs.</p>
+          <table>
+            <tr><th>Source</th><th>Avg. Efficiency</th><th>Cost Range</th></tr>
+            <tr><td>Solar</td><td>15-20%</td><td>Moderate</td></tr>
+            <tr><td>Wind</td><td>25-45%</td><td>Moderate</td></tr>
+            <tr><td>Hydro</td><td>60-90%</td><td>High</td></tr>
+          </table>
+        </article>
+      </div>
+    </section>
+    <section id="fashion" class="section">
+      <div class="container">
+        <h2>Sustainable Fashion</h2>
+        <article>
+          <p>The fashion industry has a significant environmental impact, but mindful choices can minimize it. Look for clothing made from organic or recycled materials and produced by brands that prioritize fair labor practices. When shopping, check labels for certifications like Fair Trade or Global Organic Textile Standard. Creating a capsule wardrobe—versatile pieces that mix and match easily—reduces the need for constant purchases. Focus on quality over quantity, repair garments when possible, and donate or recycle textiles responsibly.</p>
+          <ul>
+            <li>Choose natural fibers like organic cotton</li>
+            <li>Support transparent supply chains</li>
+            <li>Invest in timeless styles</li>
+            <li>Care for clothes to extend their life</li>
+            <li>Swap items with friends</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="gardening" class="section">
+      <div class="container">
+        <h2>Gardening for Sustainability</h2>
+        <article>
+          <p>Eco-friendly gardening nurtures local ecosystems and promotes biodiversity. Start by choosing native plants adapted to your region—they require less water and support beneficial insects. A well-planned garden can provide fresh produce and a habitat for wildlife. Include compost in your soil to boost nutrients and reduce the need for chemical fertilizers. Below is a list of native plants to consider, followed by a seasonal planting calendar.</p>
+          <ul class="grid grid-2">
+            <li>Wild bergamot</li>
+            <li>Milkweed</li>
+            <li>Black-eyed Susan</li>
+            <li>Switchgrass</li>
+            <li>Serviceberry</li>
+            <li>New England aster</li>
+            <li>Bee balm</li>
+            <li>Prairie dropseed</li>
+            <li>Little bluestem</li>
+            <li>Goldenrod</li>
+          </ul>
+          <table>
+            <tr><th>Season</th><th>Planting Tips</th></tr>
+            <tr><td>Spring</td><td>Start cool-season crops and prune shrubs</td></tr>
+            <tr><td>Summer</td><td>Mulch beds and water early in the day</td></tr>
+            <tr><td>Autumn</td><td>Plant bulbs and gather leaves for compost</td></tr>
+            <tr><td>Winter</td><td>Plan next year's garden and maintain tools</td></tr>
+          </table>
+        </article>
+      </div>
+    </section>
+    <section id="community" class="section">
+      <div class="container">
+        <h2>Community Action</h2>
+        <article>
+          <p>Local communities play a vital role in driving sustainable change. Join neighborhood clean-up events, participate in tree-planting drives, or volunteer at community gardens. Advocate for improved recycling programs and renewable energy initiatives. Consider forming carpool networks or starting a tool-sharing library to reduce resource consumption. A map of your city highlighting eco-friendly initiatives can help connect like-minded individuals and showcase progress.</p>
+          <ul>
+            <li>Neighborhood clean-ups</li>
+            <li>Tree planting days</li>
+            <li>Community gardens</li>
+            <li>Local recycling drives</li>
+            <li>Educational workshops</li>
+          </ul>
+          <!-- Placeholder for map showing local initiatives -->
+        </article>
+      </div>
+    </section>
+    <section id="stories" class="section">
+      <div class="container">
+        <h2>Success Stories</h2>
+        <article>
+          <p>In cities across the globe, individuals and families are embracing sustainable lifestyles with inspiring results. Sarah switched to biking for her daily commute and now saves hundreds on fuel each year while staying fit. The Ramirez family installed solar panels and reduced their electricity bills by 40%, even sharing excess power with neighbors during outages. A group of college students launched a campus-wide composting program, diverting tons of waste from landfills. These stories show that every effort, no matter how small, can spark positive change and motivate others to follow suit.</p>
+        </article>
+      </div>
+    </section>
+    <section id="faqs" class="section">
+      <div class="container">
+        <h2>FAQs</h2>
+        <dl>
+          <dt>What is the easiest way to start living sustainably?</dt>
+          <dd>Begin with small habits like reducing waste and conserving energy. Gradually add more eco-friendly choices as you learn.</dd>
+          <dt>Do sustainable products cost more?</dt>
+          <dd>Some items have a higher upfront cost, but they often last longer and save money over time.</dd>
+          <dt>How can I encourage my family to join me?</dt>
+          <dd>Lead by example and share the benefits. Involve everyone in simple tasks like recycling and conserving water.</dd>
+          <dt>Is composting possible in an apartment?</dt>
+          <dd>Yes! Countertop or balcony compost bins make it easy to manage food scraps even in small spaces.</dd>
+          <dt>Where can I learn more about renewable energy?</dt>
+          <dd>Check out books, local workshops, and reputable websites that explain the basics and available options.</dd>
+          <dt>What if my city doesn't recycle?</dt>
+          <dd>Look for drop-off centers or community programs that accept recyclables, and advocate for municipal recycling.</dd>
+          <dt>Are electric vehicles really eco-friendly?</dt>
+          <dd>They produce fewer emissions than gasoline cars, especially when powered by renewable energy.</dd>
+          <dt>How do I avoid greenwashing?</dt>
+          <dd>Research brands carefully and look for third-party certifications that verify sustainable practices.</dd>
+          <dt>Can I make a difference alone?</dt>
+          <dd>Absolutely—individual actions inspire others and collectively create significant impact.</dd>
+          <dt>Where should I start with sustainable fashion?</dt>
+          <dd>Purchase fewer, higher-quality garments and support brands that prioritize ethical production.</dd>
+        </dl>
+      </div>
+    </section>
+    <section id="resources" class="section">
+      <div class="container">
+        <h2>Resources &amp; Tools</h2>
+        <ul>
+          <li>"The Zero Waste Home" by Bea Johnson</li>
+          <li>"Cradle to Cradle" by William McDonough</li>
+          <li>Local farmers market directories</li>
+          <li>Apps like Ecosia for eco-friendly searches</li>
+          <li>Online carbon footprint calculators</li>
+          <li>Community swap meet forums</li>
+          <li>Documentaries on climate action</li>
+          <li>DIY repair tutorials</li>
+          <li>Eco-friendly product guides</li>
+          <li>Sustainable fashion blogs</li>
+        </ul>
+      </div>
+    </section>
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>From Our Blog</h2>
+        <ul>
+          <li><strong>5 Ways to Cut Energy Use</strong> – simple strategies to lower your bills and help the planet.</li>
+          <li><strong>Urban Gardening Tips</strong> – grow fresh food even in small spaces.</li>
+          <li><strong>Choosing the Right Electric Vehicle</strong> – factors to consider before you buy.</li>
+          <li><strong>DIY Upcycling Projects</strong> – transform household items into useful tools.</li>
+          <li><strong>Community Spotlight</strong> – interviews with local sustainability leaders.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="events" class="section">
+      <div class="container">
+        <h2>Events Calendar</h2>
+        <p>Stay involved by attending local sustainability events. Here's a snapshot of upcoming activities over the next three months:</p>
+        <table>
+          <tr><th>Month</th><th>Event</th></tr>
+          <tr><td>June</td><td>Community garden workshop</td></tr>
+          <tr><td>July</td><td>Neighborhood bike ride fundraiser</td></tr>
+          <tr><td>August</td><td>Beach cleanup day</td></tr>
+        </table>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We welcome your questions and feedback. Reach out to us for more information about sustainable living or to share your own tips. Our team is here to help you make the transition as smooth as possible. Connect via the form below or follow us on social media for daily inspiration.</p>
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea rows="4" placeholder="Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p>Follow us on social media for updates and community discussions.</p>
+      </div>
+    </section>
+    <section id="newsletter" class="section">
+      <div class="container">
+        <h2>Newsletter Signup</h2>
+        <p>Join our mailing list for exclusive tips, event reminders, and inspiring stories delivered straight to your inbox. By subscribing, you'll stay up to date on the latest sustainability trends and receive helpful resources to support your eco-friendly journey.</p>
+        <form>
+          <input type="email" placeholder="Your Email">
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-white text-center py-6 border-t mt-10 text-sm text-gray-600">© 2025 FunGames.ai — Let the games begin!</footer>
-
-    <script>
-      function generateGame() {
-        const theme = document.getElementById("theme").value || "a surprise theme";
-        const players = document.getElementById("players").value || "any number of players";
-        const details = document.getElementById("details").value || "simple rules and lots of laughter";
-
-        const game = `Create a game around ${theme}. It should work for ${players}, featuring ${details}. Enjoy a fun challenge and share your experience!`;
-
-        document.getElementById("gameText").textContent = game;
-        document.getElementById("gameResult").classList.remove("hidden");
-      }
-    </script>
-  </body>
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <blockquote>"These tips helped me cut my waste in half!" – Alex R.</blockquote>
+        <blockquote>"Our family loves the weekly blog updates." – Dana S.</blockquote>
+        <blockquote>"The local events calendar keeps me engaged." – Sam T.</blockquote>
+        <blockquote>"I never knew composting was so easy." – Lee K.</blockquote>
+        <blockquote>"Incredible resource for anyone starting out." – Pat M.</blockquote>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Sustainable Living. All rights reserved.</p>
+  </footer>
+</body>
 </html>
