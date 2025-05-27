@@ -74,6 +74,15 @@ a:hover {
     /* text-decoration: underline; */
 }
 
+.themeToggler:active {
+    color: transparent !important;
+    border: none !important;
+}
+.themeToggler:focus-visible {
+    color: transparent !important;
+    border: none !important;
+}
+
 /* --- Light Theme --- */
 [data-bs-theme="light"] {
     background-color: var(--light-bg);
@@ -1716,4 +1725,105 @@ footer .small {
 .list-inline-item .badge i {
     font-size: 0.9em; /* Icon size relative to badge text */
     vertical-align: middle;
+}
+
+/* ... (Keep all your existing styles) ... */
+
+/* Navbar Button Customization */
+:root {
+    /* ... your existing variables ... */
+    --btn-purple-bg: #4A00E0; /* Example purple, adjust to match image */
+    --btn-purple-hover-bg: #3A00B0; /* Darker purple for hover */
+    --btn-purple-text: #ffffff;
+}
+
+#loginBtnNavbar {
+    font-weight: 500; /* Make it look like other nav links */
+    padding-top: 0.6rem; /* Align with Request a demo button better */
+    padding-bottom: 0.6rem;
+}
+[data-bs-theme="dark"] #loginBtnNavbar {
+    color: var(--dark-text) !important;
+}
+[data-bs-theme="dark"] #loginBtnNavbar:hover {
+    color: var(--accent-color) !important;
+}
+
+
+#requestDemoBtnNavbar, .demo-submit-btn {
+    background-color: var(--btn-purple-bg) !important;
+    border-color: var(--btn-purple-bg) !important;
+    color: var(--btn-purple-text) !important;
+    font-weight: 600; /* Make it bold */
+    padding-left: 1.25rem !important; /* More horizontal padding */
+    padding-right: 1.25rem !important;
+}
+#requestDemoBtnNavbar:hover, .demo-submit-btn:hover {
+    background-color: var(--btn-purple-hover-bg) !important;
+    border-color: var(--btn-purple-hover-bg) !important;
+    color: var(--btn-purple-text) !important;
+}
+#requestDemoBtnNavbar.active { /* If it's the current page link */
+    background-color: var(--btn-purple-hover-bg) !important;
+    border-color: var(--btn-purple-hover-bg) !important;
+}
+.navbar .btn-sm { /* For #requestDemoBtnNavbar */
+    padding-top: 0.4rem; /* Adjust vertical padding for btn-sm */
+    padding-bottom: 0.4rem;
+}
+
+
+/* Demo Page Specific Styles */
+.demo-page-main { /* Add more top margin if navbar is fixed and content goes under */
+    /* margin-top: 70px; /* Example if your navbar is around 70px tall */
+}
+.section-padding-lg { /* For hero-like sections */
+    padding: 100px 0;
+}
+@media (max-width: 768px) {
+    .section-padding-lg {
+        padding: 60px 0;
+    }
+}
+
+.demo-page-heading {
+    line-height: 1.2; /* Tighter line height for large headings */
+}
+.demo-page-heading .highlight-purple {
+    color: var(--btn-purple-bg); /* Use the same purple as buttons */
+}
+[data-bs-theme="dark"] .demo-page-heading .highlight-purple {
+    color: #9D70FF; /* A lighter, more vibrant purple for dark mode */
+}
+
+.demo-page-main .icon-list li { /* Reusing icon-list style, ensure it's defined */
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 0.75rem; /* Less margin for demo page list */
+    font-size: 1.05rem; 
+    line-height: 1.5;
+}
+.demo-page-main .icon-list li i {
+    font-size: 1.2em; 
+    margin-top: 0.1em; 
+    margin-right: 0.6rem;
+    flex-shrink: 0; 
+}
+[data-bs-theme="dark"] .demo-page-main .icon-list .text-primary {
+    color: var(--accent-color) !important;
+}
+
+.demo-form-card {
+    background-color: var(--card-light-bg); /* Or var(--content-light-bg) */
+    border-radius: var(--border-radius-lg);
+}
+[data-bs-theme="dark"] .demo-form-card {
+    background-color: var(--card-dark-bg); /* Or var(--content-dark-bg) */
+}
+.demo-form-card .form-control-lg,
+.demo-form-card .form-select-lg {
+    font-size: 0.95rem; /* Slightly smaller font for form inputs if needed */
+}
+.demo-submit-btn { /* Specific class for demo page submit button */
+    /* Uses shared styles with #requestDemoBtnNavbar */
 }

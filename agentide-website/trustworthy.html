@@ -15,10 +15,10 @@
 <body>
 
     <!-- Navbar (Copy from index.html or your template) -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+ <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <img src="img/agentide-logo.png" alt="AgentIDE.ai Logo" class="me-2">
+                <img src="img/agentide-logo.png" alt="AgentIDE.ai Logo" class="me-2"> 
                 AgentIDE.ai
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
@@ -50,7 +50,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Company
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="companyDropdown">
@@ -58,18 +58,24 @@
                             <li><a class="dropdown-item" href="experience.html">Experience</a></li>
                             <li><a class="dropdown-item" href="expertise.html">Expertise</a></li>
                             <li><a class="dropdown-item" href="authority.html">Authority</a></li>
-                            <li><a class="dropdown-item active" href="trustworthy.html">Trustworthiness</a></li>
+                            <li><a class="dropdown-item" href="trustworthy.html">Trustworthiness</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
+                    <li class="">
+                        <a href="demo.html" class="btn btn-primary btn-sm" id="requestDemoBtnNavbar">Request a demo</a>
+                    </li>
                 </ul>
-                <div class="text-end">
-                <button id="theme-toggler" class="btn btn-outline-secondary ms-lg-2 mt-2 mt-lg-0">
-                    <i class="bi bi-moon-stars-fill"></i>
-                </button>
+                
+                <div class="d-flex align-items-center justify-content-end ms-lg-3"> 
+                    <button id="theme-toggler" class="themeToggler btn bg-transparent outline-none me-2"> 
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    
                 </div>
+                
             </div>
         </div>
     </nav>

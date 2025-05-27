@@ -203,4 +203,41 @@ document.addEventListener('DOMContentLoaded', function () {
             contactForm.classList.add('was-validated'); // Add class to show validation messages
         }, false);
     }
+
+    // ... (Keep all your existingDOMContentLoaded, theme toggler, navbar scroll, active nav, current year logic) ...
+
+    // --- Demo Request Form Submission & Validation ---
+    const demoRequestForm = document.getElementById('demoRequestForm');
+    if (demoRequestForm) {
+        demoRequestForm.addEventListener('submit', function (event) {
+            if (!demoRequestForm.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            } else {
+                // Form is valid, proceed with submission (AJAX or default)
+                event.preventDefault(); // Prevent actual submission for this demo
+                
+                const formMessages = document.getElementById('demoFormMessages');
+                if (formMessages) {
+                    // Simulate AJAX submission
+                    formMessages.innerHTML = '<div class="alert alert-info alert-dismissible fade show" role="alert">Submitting your request... <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+                    
+                    // Gather form data (example)
+                    // const email = document.getElementById('demoWorkEmail').value;
+                    // console.log("Demo request from:", email);
+
+                    setTimeout(() => {
+                        formMessages.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">Thank you! We received your demo request and will be in touch soon. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+                        demoRequestForm.reset();
+                        demoRequestForm.classList.remove('was-validated'); // Reset validation state
+                    }, 2000);
+                } else {
+                    alert('Thank you for your demo request! We will be in touch.'); // Fallback
+                    demoRequestForm.reset();
+                    demoRequestForm.classList.remove('was-validated');
+                }
+            }
+            demoRequestForm.classList.add('was-validated'); // Add class to show validation messages
+        }, false);
+    }
 });
