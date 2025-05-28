@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyShop Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">ToyShop.uk</a>
+            <div class="nav-icon" id="nav-toggler">☰</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#generate-story" class="nav-link">Create Story</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content animate">
+            <h1>Imagination Starts Here!</h1>
+            <p>Create playful stories with our colorful characters.</p>
+            <a href="#generate-story" class="btn btn-primary">Start Now</a>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="works" class="section works-section">
+            <h2 class="section-title animate">How It Works</h2>
+            <div class="steps">
+                <div class="step-card animate" data-color="#FF8A65">Pick Your Style</div>
+                <div class="step-card animate" data-color="#4FC3F7">Choose Friends</div>
+                <div class="step-card animate" data-color="#FFEB3B">Add Silly Stuff</div>
+                <div class="step-card animate" data-color="#81C784">Enjoy the Tale</div>
+            </div>
+        </section>
+
+        <section id="generate-story" class="section generator-section">
+            <h2 class="section-title">Create Your Story</h2>
+            <div class="generator-container">
+                <div id="screen-1" class="screen active-screen">
+                    <h3>Step 1: Choose a Genre</h3>
+                    <div class="options-grid" id="genre-options"></div>
+                    <button class="btn btn-primary btn-next" data-target="screen-2">Next</button>
+                </div>
+                <div id="screen-2" class="screen">
+                    <h3>Step 2: Pick Characters</h3>
+                    <div class="options-grid" id="character-options"></div>
+                    <div class="navigation-buttons">
+                        <button class="btn btn-secondary btn-back" data-target="screen-1">Back</button>
+                        <button class="btn btn-primary btn-next" data-target="screen-3">Next</button>
+                    </div>
+                </div>
+                <div id="screen-3" class="screen">
+                    <h3>Your Story Prompt</h3>
+                    <div id="prompt-display" class="prompt-box"></div>
+                    <div class="navigation-buttons">
+                        <button class="btn btn-secondary btn-back" data-target="screen-2">Back</button>
+                        <button id="btn-generate" class="btn btn-success">Generate!</button>
+                    </div>
+                </div>
+                <div id="screen-4" class="screen">
+                    <h3>Your Story</h3>
+                    <div id="story-display" class="story-box"></div>
+                    <button class="btn btn-primary" id="btn-restart">Start Over</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features-section">
+            <h2 class="section-title animate">Awesome Features</h2>
+            <div class="features-grid">
+                <div class="feature-card animate" data-color="#4FC3F7">Safe & Fun</div>
+                <div class="feature-card animate" data-color="#FFB74D">Fully Customizable</div>
+                <div class="feature-card animate" data-color="#FF8A65">Playful Voices</div>
+                <div class="feature-card animate" data-color="#81C784">Learn & Grow</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <p>© <span id="current-year"></span> ToyShop.uk</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
