@@ -1,10 +1,12 @@
 /* --- General Styles & Variables --- */
 :root {
+
     --primary-color: #8e44ad;
     --primary-hover-color: #7d3c98;
     --secondary-color: #34495e;
     --accent-color: #e67e22;
     --accent-hover-color: #d35400;
+
 
     --light-bg: #f8f9fa;
     --dark-bg: #1a1d20;
@@ -542,6 +544,7 @@ sup {
     line-height: 0; /* Prevent affecting line height */
     /* color: var(--secondary-color); */ /* Optional: mute them slightly */
 }
+
 /* Footer note highlighting the AgentIdea.ai community */
 footer .small {
     line-height: 1.5; /* Ensure readability if text wraps */
