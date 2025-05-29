@@ -1,10 +1,13 @@
 /* --- General Styles & Variables --- */
 :root {
-    --primary-color: #8e44ad;
-    --primary-hover-color: #7d3c98;
-    --secondary-color: #34495e;
-    --accent-color: #e67e22;
-    --accent-hover-color: #d35400;
+
+    /* Updated color scheme */
+    --primary-color: #006c9a;
+    --primary-hover-color: #00557a;
+    --secondary-color: #0d3b66;
+    --accent-color: #ff756b;
+    --accent-hover-color: #ff5045;
+
 
     --light-bg: #f8f9fa;
     --dark-bg: #1a1d20;
