@@ -6,3 +6,4 @@
 6. Badge or certificate graphic for the authority page.
 7. Illustration of people collaborating for credibility and trustworthiness pages.
 8. Screenshot of the IDE for the demo page.
+
