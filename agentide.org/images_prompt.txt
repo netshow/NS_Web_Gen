@@ -1,0 +1,5 @@
+1. Logo for Agent IDE Org - a clean symbol representing AI agents and coding tools.
+2. Illustration of a dashboard showing AI workflow - used on homepage hero section.
+3. Icon-style images for features like visual builder, code integration, and analytics.
+4. Team member headshots for about page.
+5. Generic office background for contact page.
