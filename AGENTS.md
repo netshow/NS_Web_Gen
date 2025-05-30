@@ -27,7 +27,7 @@ AI-related domains. Follow these rules when contributing:
       - Grid systems
       - Section arrangements
     - Placeholder Images:
-      Use placeholder images when actual images are not available. Store all images inside an images/ subfolder within each domain's folder.
+      Insert placeholder images where images are needed. These can later be replaced with actual images relevant to the domain.
 
 
 
