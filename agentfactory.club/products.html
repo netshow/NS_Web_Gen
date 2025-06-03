@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Platform Features - AgentFactory.club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar (Common to all pages) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AgentFactory.club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="faq.html">Popular Questions (FAQ)</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+                            <li><a class="dropdown-item" href="pros_cons.html">Pros & Cons</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                            <li><a class="dropdown-item" href="credibility.html">Credibility</a></li>
+                            <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+                            <li><a class="dropdown-item" href="expertise.html">Expertise</a></li>
+                            <li><a class="dropdown-item" href="authority.html">Authority</a></li>
+                            <li><a class="dropdown-item" href="trustworthy.html">Trustworthy</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Legal</a>
+                        <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="disclosure.html">Disclosure</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Of Use</a></li>
+                            <li><a class="dropdown-item" href="references.html">References</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item ms-lg-2"><button id="theme-toggle" class="btn btn-sm theme-btn"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>AgentFactory.club Platform Features and Modules</h1>
+            <p class="lead">Explore the core components that make AgentFactory.club a powerful IDE for AI agents.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="content-section">
+            <p>AgentFactory.club is more than just a single tool; it's a comprehensive suite of interconnected modules and features designed to provide a seamless and powerful development experience for AI agents. Below are the key "products" or modules within our platform:</p>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-paint-roller me-2 text-primary"></i>AgentFactory.club Studio (Visual Builder & Code Editor Interface)</h3>
+                            <p class="card-text">The heart of the development experience, our web-based IDE provides:</p>
+                            <ul>
+                                <li><strong>Visual Workflow Designer:</strong> Drag-and-drop nodes representing actions, logic, integrations, and custom code blocks.</li>
+                                <li><strong>Configuration Panels:</strong> Intuitive forms and settings for configuring agent behavior, parameters, and integrations without deep coding.</li>
+                                <li><strong>Integrated Code Editors:</strong> Full-featured editors for Python and TypeScript with syntax highlighting, autocompletion (where applicable), and direct embedding into agent workflows.</li>
+                                <li><strong>Prompt Engineering Interface:</strong> Tools for crafting, testing, and managing prompts for Large Language Models.</li>
+                                <li><strong>Agent Preview & Debugging Tools:</strong> Real-time feedback, step-through execution, and log viewers to understand and troubleshoot agent behavior.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-brain me-2 text-primary"></i>AgentFactory AI Brain (Cognitive Engine)</h3>
+                            <p class="card-text">The underlying intelligence and orchestration layer that powers your agents:</p>
+                            <ul>
+                                <li><strong>Core Reasoning Engine:</strong> Enables agents to make decisions, follow logic, and execute tasks.</li>
+                                <li><strong>Memory Management:</strong> Short-term and long-term memory capabilities for context retention and learning.</li>
+                                <li><strong>Tool Usage Orchestration:</strong> Manages how agents interact with various tools, APIs, and custom code functions.</li>
+                                <li><strong>State Management:</strong> Tracks the current state and progress of agent tasks.</li>
+                                <li><strong>Access to Foundational Models:</strong> Seamless integration with various LLMs and other AI models.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-network-wired me-2 text-primary"></i>AgentFactory Integration Hub (Connectors & Plugins)</h3>
+                            <p class="card-text">Facilitates seamless connection to external systems and services:</p>
+                            <ul>
+                                <li><strong>Pre-built Connector Library:</strong> Ready-to-use integrations for popular services (OpenAI, Deepgram, LangChain, Pinecone, Hugging Face, Zapier, CRMs, databases, etc.).</li>
+                                <li><strong>Custom API Connector:</strong> Tool for easily configuring connections to any REST/GraphQL API.</li>
+                                <li><strong>Plugin Architecture:</strong> Extensible system for adding new functionalities and integrations.</li>
+                                <li><strong>Data Source Connectors:</strong> Tools for fetching and interacting with various data sources.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-tachometer-alt me-2 text-primary"></i>AgentFactory Dashboard & Agent Management Suite</h3>
+                            <p class="card-text">Centralized control and oversight for your AI agents and projects:</p>
+                            <ul>
+                                <li><strong>Agent Registry:</strong> View and manage all your created agents.</li>
+                                <li><strong>Monitoring & Analytics:</strong> Dashboards for real-time performance tracking, usage statistics, and error logging.</li>
+                                <li><strong>Version Control Interface:</strong> Manage agent versions, branches, and rollbacks.</li>
+                                <li><strong>Collaboration Tools:</strong> Features for team-based development, including shared workspaces and role-based access controls (Pro/Enterprise).</li>
+                                <li><strong>Usage & Billing Management:</strong> Track resource consumption and manage subscription details.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-rocket me-2 text-primary"></i>AgentFactory Deployment & Operations Hub</h3>
+                            <p class="card-text">Streamlines the process of getting your agents live and managing them in production:</p>
+                            <ul>
+                                <li><strong>Multi-Channel Deployment:</strong> One-click or guided deployment to websites (embed), mobile apps, Slack, WhatsApp, Telegram, CRMs, and custom API endpoints.</li>
+                                <li><strong>Scalable Hosting Infrastructure:</strong> Reliable and managed environment for running your agents.</li>
+                                <li><strong>Environment Management:</strong> Configure development, staging, and production environments.</li>
+                                <li><strong>Logging & Alerting:</strong> Comprehensive logging and configurable alerts for operational issues.</li>
+                                <li><strong>MLOps Tooling:</strong> Features supporting continuous integration/continuous deployment (CI/CD) for agents.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-shield-alt me-2 text-primary"></i>AgentFactory Security, Control & Governance Features</h3>
+                            <p class="card-text">Ensuring your AI agents operate safely and responsibly:</p>
+                            <ul>
+                                <li><strong>Role-Based Access Control (RBAC):</strong> Fine-grained permissions for users and teams.</li>
+                                <li><strong>Audit Trails:</strong> Comprehensive logs of user actions and agent activities for compliance.</li>
+                                <li><strong>Data Encryption:</strong> Encryption for data in transit and at rest.</li>
+                                <li><strong>Secrets Management:</strong> Secure storage and management of API keys and other sensitive credentials.</li>
+                                <li><strong>Compliance Tools:</strong> Features to help meet industry-specific regulations (e.g., data masking, PII handling).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-book-open me-2 text-primary"></i>AgentFactory Learning & Developer Resources</h3>
+                            <p class="card-text">Support and materials to help you master the platform:</p>
+                            <ul>
+                                <li><strong>Comprehensive Documentation:</strong> In-depth guides, API references, and tutorials.</li>
+                                <li><strong>SDKs (Software Development Kits):</strong> Libraries for Python/TypeScript to interact with and extend the platform programmatically.</li>
+                                <li><strong>Example Agents & Templates:</strong> A collection of ready-to-use or adaptable examples.</li>
+                                <li><strong>Community Forum & Support Channels:</strong> Access to peer support and official help channels.</li>
+                                <li><strong>AgentFactory.club Academy (Potential):</strong> Training courses and learning paths.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-layer-group me-2 text-primary"></i>AgentFactory Scalability and Enterprise Features</h3>
+                            <p class="card-text">Designed to meet the needs of growing and large-scale deployments (typically in Pro/Enterprise tiers):</p>
+                            <ul>
+                                <li><strong>High Availability & Fault Tolerance:</strong> Infrastructure designed for uptime and resilience.</li>
+                                <li><strong>Advanced Resource Management:</strong> Control over compute resources and scaling options.
+                                <li><strong>Custom Branding & White-Labeling Options:</strong> For enterprise clients.</li>
+                                <li><strong>Dedicated Support & SLAs:</strong> Service Level Agreements and priority support channels.</li>
+                                <li><strong>Single Sign-On (SSO) Integration:</strong> For seamless enterprise authentication.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Common to all pages) -->
+    <footer class="footer-section text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; <span id="currentYear"></span> AgentFactory.club. All Rights Reserved.</p>
+            <p class="mb-2"><a href="privacy.html" class="text-decoration-none footer-link">Privacy Policy</a> | <a href="terms.html" class="text-decoration-none footer-link">Terms of Use</a> | <a href="contact.html" class="text-decoration-none footer-link">Contact Us</a></p>
+            <div class="social-icons mt-2"><a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a> <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a> <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a> <a href="#" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
