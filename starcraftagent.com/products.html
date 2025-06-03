@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Platform Features - Starcraft Agent</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome Icons-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar (Copy from index.html or your template) -->
+ <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="https://via.placeholder.com/600x400" alt="Starcraft Agent Logo" class="me-2"> 
+                Starcraft Agent
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Popular Questions (FAQ)</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">Product Reviews</a></li>
+                            <li><a class="dropdown-item" href="pros-cons.html">Pros & Cons</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                            <li><a class="dropdown-item" href="credibility.html">Credibility</a></li>
+                            <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+                            <li><a class="dropdown-item" href="expertise.html">Expertise</a></li>
+                            <li><a class="dropdown-item" href="authority.html">Authority</a></li>
+                            <li><a class="dropdown-item" href="trustworthy.html">Trustworthiness</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="">
+                        <a href="demo.html" class="btn btn-primary btn-sm" id="requestDemoBtnNavbar">Request a demo</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center justify-content-end ms-lg-3"> 
+                    <button id="theme-toggler" class="themeToggler btn bg-transparent outline-none me-2"> 
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <header class="page-header text-center">
+            <div class="container py-3">
+                <h1 class="display-5 fw-bold">Platform Features and Modules</h1>
+                <p class="lead col-md-10 col-lg-8 mx-auto">Starcraft Agent is a feature-rich platform. Discover the key components and modules that work together to provide a seamless experience in building and deploying AI agents.</p>
+            </div>
+        </header>
+
+        <!-- Products Section -->
+        <section class="section-padding product-features-section py-5">
+            <div class="container my-4">
+
+                <!-- Product Module 1: Starcraft Agent Studio -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-tools display-6 me-3"></i> 1. Starcraft Agent Studio (Visual Builder Interface)</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Our flagship component – the web-based visual IDE where you create and configure agents:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-arrows-move me-2 text-primary"></i><strong>Drag-and-Drop Editor:</strong></span> <span class="ms-4 ms-sm-0"> Design agent workflows by dragging blocks onto a canvas and connecting them, like building a flowchart.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-input-cursor-text me-2 text-primary"></i><strong>Webform Configuration:</strong></span> <span class="ms-4 ms-sm-0"> Fill out simple forms for each step (e.g., "Send an Email" form with recipient, subject, body).</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-chat-square-quote-fill me-2 text-primary"></i><strong>Natural Language Prompting:</strong></span> <span class="ms-4 ms-sm-0"> Write what you want in natural language for agent goals or response templates, with co-pilot suggestions.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-exclamation-triangle-fill me-2 text-primary"></i><strong>Real-Time Feedback:</strong></span> <span class="ms-4 ms-sm-0">Flags potential issues as you build (e.g., unconnected steps, missing API keys).</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-diagram-3-fill me-2 text-primary"></i><strong>Multi-Agent Orchestration:</strong></span> <span class="ms-4 ms-sm-0">Create scenarios where multiple agents work together or in sequence (advanced plans).</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-play-circle-fill me-2 text-primary"></i><strong>Simulate & Debug:</strong></span> <span class="ms-4 ms-sm-0">Built-in simulator to run agents step-by-step, watch decisions, and view readable debugging info.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 2: AI Brain -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="fas fa-brain display-6 me-3"></i> </i> 2. AI Brain (Cognitive Engine)</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Under the hood, every agent is powered by our AI Brain:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-cpu-fill me-2 text-primary"></i><strong>LLM Integration:</strong></span> <span class="ms-4 ms-sm-0"> Integrates top-tier language models (GPT series, etc.) for context understanding, text generation, and reasoning. User configures agent; AI Brain handles model selection.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-sd-card-fill me-2 text-primary"></i><strong>Memory Module:</strong></span> <span class="ms-4 ms-sm-0"> Short-term (working) and optional long-term memory for context retention and recalling past interactions securely.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-book-fill me-2 text-primary"></i><strong>Knowledge Base Connector:</strong></span> <span class="ms-4 ms-sm-0"> Attach documents, FAQs, or databases for agents to use for answers/decisions (uses embedding search). </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-lightbulb-fill me-2 text-primary"></i><strong>Tool Use & ReAct Logic:</strong></span> <span class="ms-4 ms-sm-0"> Agents decide when to use tools (API calls, web search) via ReAct (Reason+Act) logic, breaking tasks into sub-tasks autonomously.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-translate me-2 text-primary"></i><strong>Multi-language Support:</strong></span>  <span class="ms-4 ms-sm-0">Cognitive engine supports multiple languages for agent conversation and processing. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 3: Integration Hub -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-plug-fill display-6 me-3"></i> 3. Integration Hub (Connectors & Plugins)</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Manage connections to other services:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-hdd-stack-fill me-2 text-primary"></i><strong>Library of Connectors:</strong></span> <span class="ms-4 ms-sm-0"> Easily connect to CRMs, email, calendars, databases, IoT devices (e.g., Salesforce, Stripe). </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-key-fill me-2 text-primary"></i><strong>Credentials Management:</strong></span> <span class="ms-4 ms-sm-0"> Securely store API keys or connect accounts via OAuth, with encryption. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-tools me-2 text-primary"></i><strong>Custom Connectors:</strong></span> <span class="ms-4 ms-sm-0"> Create connectors for internal APIs by providing endpoint details and authentication. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-bell-fill me-2 text-primary"></i><strong>Event Triggers:</strong></span> <span class="ms-4 ms-sm-0"> Integrations can trigger agents (e.g., new email, new database entry) via configured event hooks. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-shop me-2 text-primary"></i><strong>Plugin Marketplace (Future):</strong></span> <span class="ms-4 ms-sm-0"> Browse and add new third-party plugins to extend capabilities dynamically. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 4: Dashboard & Agent Management -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-grid-1x2-fill display-6 me-3"></i> 4. Dashboard & Agent Management</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Manage all your agents and monitor their performance:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-list-task me-2 text-primary"></i><strong>Agent List and Status:</strong></span> <span class="ms-4 ms-sm-0"> At-a-glance view of agents, status, last run time, and quick actions. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-bar-chart-line-fill me-2 text-primary"></i><strong>Analytics:</strong></span> <span class="ms-4 ms-sm-0"> Usage stats, success/failure rates, interaction counts, visualized with graphs. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-file-earmark-text-fill me-2 text-primary"></i><strong>Logs & Transcripts:</strong></span> <span class="ms-4 ms-sm-0"> Dive into agent logs, conversation transcripts, and step-by-step execution traces. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-bug-fill me-2 text-primary"></i><strong>Error Handling:</strong></span> <span class="ms-4 ms-sm-0"> Flags errors, tools to inspect issues, and suggestions for common problems. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-back me-2 text-primary"></i><strong>Version Control (Pro):</strong></span> <span class="ms-4 ms-sm-0"> Keep versions of agents, rollback, compare changes, valuable for teams. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-people-fill me-2 text-primary"></i><strong>Collaboration Tools:</strong></span> <span class="ms-4 ms-sm-0"> Manage collaborators, assign roles (Owner, Editor, Viewer) per agent for team accounts. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 5: Deployment & Sharing Tools -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-rocket-takeoff-fill display-6 me-3"></i> 5. Deployment & Sharing Tools</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Easily share your agent with the world or specific users:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-link-45deg me-2 text-primary"></i><strong> Shareable Chat Link:</strong></span> <span class="ms-4 ms-sm-0">Generate a link for users to interact with conversational agents. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-code-square me-2 text-primary"></i><strong> Embed Widgets:</strong></span> <span class="ms-4 ms-sm-0"> Configure embeddable HTML/JS widgets for your website, reflecting live agent updates. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-terminal-fill me-2 text-primary"></i><strong> API Endpoint:</strong></span> <span class="ms-4 ms-sm-0"> Get API details, usage instructions, and example code snippets for programmatic access. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-send-check-fill me-2 text-primary"></i><strong> Third-party Deployments:</strong></span> <span class="ms-4 ms-sm-0">One-click options (e.g., "Deploy to Slack/Telegram") with guided authorization. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-arrow-repeat me-2 text-primary"></i><strong> Continuous Deployment:</strong></span> <span class="ms-4 ms-sm-0">Real-time updates or staging/production versions for enterprise workflows.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 6: Security & Control Features -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-shield-lock-fill display-6 me-3"></i> 6. Security & Control Features</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Important features for security and user control:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-person-fill-gear me-2 text-primary"></i><strong> Role-Based Access (RBAC):</strong></span> <span class="ms-4 ms-sm-0"> Control permissions for creating, publishing, and viewing agents in team scenarios.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-shield-shaded me-2 text-primary"></i><strong> Data Encryption & Compliance:</strong></span> <span class="ms-4 ms-sm-0"> Choose encryption settings (BYOK for enterprise), EU-only data residency toggles. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-graph-down-arrow me-2 text-primary"></i><strong> Usage Limits & Budgeting:</strong></span> <span class="ms-4 ms-sm-0"> Set soft limits for usage and costs, with notifications or agent pausing. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-journals me-2 text-primary"></i><strong>Audit Logs:</strong></span> <span class="ms-4 ms-sm-0"> For compliance, logs of user actions (downloads, setting changes). </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-eye-slash-fill me-2 text-primary"></i><strong>Privacy Mode for Chats:</strong></span> <span class="ms-4 ms-sm-0"> Anonymize or limit retention of user inputs for deployed chatbots. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 7: Learning Resources -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-info-circle-fill display-6 me-3"></i> 7. Learning Resources within the Product</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Integrated help and learning experiences:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-check2-circle me-2 text-primary"></i><strong>Onboarding Checklist:</strong></span> <span class="ms-4 ms-sm-0"> Interactive guide for new users to navigate initial steps. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-lightbulb me-2 text-primary"></i><strong>Example Gallery:</strong></span> <span class="ms-4 ms-sm-0"> In-builder examples for blocks or features (e.g., "API Call" block usage). </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-patch-question-fill me-2 text-primary"></i><strong>Tool Tips & Docs:</strong></span> <span class="ms-4 ms-sm-0"> Hover explanations with links to detailed documentation or tutorials. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-chat-left-text-fill me-2 text-primary"></i><strong>Community Q&A Integration (Planned):</strong></span> <span class="ms-4 ms-sm-0"> Surface relevant forum discussions and Q&A from help search. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 8: Mobile Accessibility -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-phone-fill display-6 me-3"></i> 8. Mobile Accessibility</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Ensuring accessibility on mobile where needed:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-aspect-ratio-fill me-2 text-primary"></i><strong>Responsive Design:</strong></span> <span class="ms-4 ms-sm-0"> Dashboard and basic agent monitoring are mobile-friendly. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-app-indicator me-2 text-primary"></i><strong>Mobile App (Coming Soon):</strong></span> <span class="ms-4 ms-sm-0"> Companion app for notifications, quick actions, and human-in-the-loop replies. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 9: Scalability & Enterprise Features -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-building-fill-gear display-6 me-3"></i> 9. Scalability and Enterprise Features</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Additional features for enterprise needs:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-hdd-network-fill me-2 text-primary"></i><strong>High-Volume Scaling:</strong></span> <span class="ms-4 ms-sm-0"> to handle high loads, with dedicated resources for enterprise plans.</span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-speedometer2 me-2 text-primary"></i><strong>SLA and Priority Queuing:</strong></span> <span class="ms-4 ms-sm-0"> Low latency and documented SLAs for mission-critical deployments. </span></li>
+                            <li class="d-flex flex-column flex-sm-row"><span><i class="bi bi-palette-fill me-2 text-primary"></i><strong>Multi-Tenancy and Whitelabel:</strong></span> <span class="ms-4 ms-sm-0"> Options for whitelabel versions or embedding Starcraft Agent capabilities under other brands. </span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Module 10: Continuous Innovation -->
+                <div class="product-module card shadow-sm mb-5">
+                    <div class="card-header bg-primary text-white p-4">
+                        <h2 class="h3 mb-0 d-flex align-items-baseline"><i class="bi bi-arrow-clockwise display-6 me-3"></i> 10. Continuous Innovation</h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="lead-sm">Starcraft Agent is an evolving product:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="d-flex flex-column flex-sm-row"><i class="bi bi-graph-up me-2 text-primary"></i>Actively incorporate latest research (e.g., chain-of-thought prompting) and user feedback.</li>
+                            <li class="d-flex flex-column flex-sm-row"><i class="bi bi-binoculars-fill me-2 text-primary"></i>Monitor industry movements to remain at the cutting edge of no-code AI development.</li>
+                            <li class="d-flex flex-column flex-sm-row"><i class="bi bi-stars me-2 text-primary"></i>Roadmap filled with exciting new features (voice interaction, dynamic UI generation) for ongoing value.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <p class="lead">In summary, the Starcraft Agent product combines an intuitive interface, a powerful AI back-end, extensive integration options, and robust management/deployment tools. It’s designed to handle the full lifecycle of AI agents, all wrapped in an approachable package for non-experts while still offering depth for power users.</p>
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                    <a href="contact.html#get-started" class="btn btn-lg btn-dark mt-3 rounded-pill fs-6">
+                        <i class="bi bi-play-circle-fill me-2"></i> <span>Started with Starcraft Agent Today!</span>
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Copy from index.html or your template) -->
+    <footer class="py-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <img src="https://via.placeholder.com/600x400" alt="Starcraft Agent Logo" class="me-2">
+                        Starcraft Agent
+                    </a>
+                    <p class="mt-2 text-muted small">Empowering everyone to build AI agents with zero code. Powered by NetShow.AI.</p>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-muted">Services</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="faq.html" class="nav-link p-0 text-muted">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="reviews.html" class="nav-link p-0 text-muted">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 ms-md-auto">
+                    <h5>Legal</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="privacy.html" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                        <li class="nav-item mb-2"><a href="terms.html" class="nav-link p-0 text-muted">Terms of Use</a></li>
+                        <li class="nav-item mb-2"><a href="disclosure.html" class="nav-link p-0 text-muted">Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p class="text-muted">© <span id="currentYear"></span> Starcraft Agent. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted social-icon-link" href="#"><i class="bi bi-twitter-x"></i></a></li>
+                    <li class="ms-3"><a class="text-muted social-icon-link" href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-muted social-icon-link" href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
