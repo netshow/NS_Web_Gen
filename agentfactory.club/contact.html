@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AgentFactory.club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar (Common to all pages) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AgentFactory.club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="faq.html">Popular Questions (FAQ)</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+                            <li><a class="dropdown-item" href="pros_cons.html">Pros & Cons</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                            <li><a class="dropdown-item" href="credibility.html">Credibility</a></li>
+                            <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+                            <li><a class="dropdown-item" href="expertise.html">Expertise</a></li>
+                            <li><a class="dropdown-item" href="authority.html">Authority</a></li>
+                            <li><a class="dropdown-item" href="trustworthy.html">Trustworthy</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Legal</a>
+                        <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="disclosure.html">Disclosure</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Of Use</a></li>
+                            <li><a class="dropdown-item" href="references.html">References</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item ms-lg-2"><button id="theme-toggle" class="btn btn-sm theme-btn"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>Get in Touch with AgentFactory.club</h1>
+            <p class="lead">We're here to help and answer any question you might have.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="content-section">
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 id="book-call-form">Contact Form</h2>
+                    <p>Please fill out the form below, and we'll get back to you as soon as possible. For booking a call, please specify your interest in the message.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <h2>Contact Details</h2>
+                    <p><i class="fas fa-envelope me-2 text-primary"></i><strong>Support:</strong> <a href="mailto:support@agentfactory.club">support@agentfactory.club</a></p>
+                    
+                    <h4>Specific Inquiries:</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-question-circle me-2 text-primary"></i><strong>General Questions:</strong> <a href="mailto:info@agentfactory.club">info@agentfactory.club</a></li>
+                        <li><i class="fas fa-briefcase me-2 text-primary"></i><strong>Sales/Enterprise:</strong> <a href="mailto:sales@agentfactory.club">sales@agentfactory.club</a></li>
+                        <li><i class="fas fa-handshake me-2 text-primary"></i><strong>Partnerships:</strong> <a href="mailto:partnerships@agentfactory.club">partnerships@agentfactory.club</a></li>
+                        <li><i class="fas fa-users me-2 text-primary"></i><strong>Community/DevRel:</strong> <a href="mailto:community@agentfactory.club">community@agentfactory.club</a></li>
+                    </ul>
+
+                    <h4 class="mt-4">Phone:</h4>
+                    <p><i class="fas fa-phone me-2 text-primary"></i>(If applicable, e.g., +1-555-AGENT-00)</p>
+                    
+                    <h4 class="mt-4">Physical Mail:</h4>
+                    <address>
+                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                        <strong>AgentFactory.club</strong><br>
+                        [Your Company Address Here, Line 1]<br>
+                        [City, State, Zip Code]<br>
+                        [Country]
+                    </address>
+
+                    <h4 class="mt-4">Support & Community</h4>
+                     <p>We're here to help! You can find detailed information in our <a href="faq.html">Help Center (FAQ)</a>, engage with our team via in-app chat (once logged in), or join the discussion in our <a href="http://agentfactory.club/community" target="_blank">Community forums</a> at agentfactory.club/community.</p>
+
+                    <h4 class="mt-4">Feedback & Suggestions</h4>
+                    <p>We value your input! If you have feedback or suggestions on how we can improve AgentFactory.club, please don't hesitate to share them with us at <a href="mailto:feedback@agentfactory.club">feedback@agentfactory.club</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Common to all pages) -->
+    <footer class="footer-section text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; <span id="currentYear"></span> AgentFactory.club. All Rights Reserved.</p>
+            <p class="mb-2"><a href="privacy.html" class="text-decoration-none footer-link">Privacy Policy</a> | <a href="terms.html" class="text-decoration-none footer-link">Terms of Use</a> | <a href="contact.html" class="text-decoration-none footer-link">Contact Us</a></p>
+            <div class="social-icons mt-2"><a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a> <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a> <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a> <a href="#" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
