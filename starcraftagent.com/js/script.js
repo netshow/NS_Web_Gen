@@ -81,23 +81,31 @@
 document.addEventListener("DOMContentLoaded", function () {
   const themeToggler = document.getElementById("theme-toggler");
   const htmlElement = document.documentElement;
-  const themeIcon = themeToggler.querySelector("i");
+  const themeIcon = themeToggler ? themeToggler.querySelector("i") : null;
+
   const mainNavbar = document.getElementById("mainNavbar"); // Get the navbar
 
   // --- Theme Toggler ---
   const savedTheme = localStorage.getItem("theme") || "light";
   htmlElement.setAttribute("data-bs-theme", savedTheme);
-  updateThemeIcon(savedTheme);
+  if (themeIcon) {
+    updateThemeIcon(savedTheme);
+  }
 
-  themeToggler.addEventListener("click", () => {
-    const currentTheme = htmlElementetAttribute("data-bs-theme");
-    const newTheme = currentTheme === "light" ? "dark" : "light";
-    htmlElement.setAttribute("data-bs-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    updateThemeIcon(newTheme);
-  });
+  if (themeToggler) {
+    themeToggler.addEventListener("click", () => {
+      const currentTheme = htmlElement.getAttribute("data-bs-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      htmlElement.setAttribute("data-bs-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      if (themeIcon) {
+        updateThemeIcon(newTheme);
+      }
+    });
+  }
 
   function updateThemeIcon(theme) {
+    if (!themeIcon) return;
     if (theme === "dark") {
       themeIcon.classList.remove("bi-moon-stars-fill");
       themeIcon.classList.add("bi-sun-fill");
