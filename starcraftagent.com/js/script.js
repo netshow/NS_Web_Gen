@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateThemeIcon(savedTheme);
 
   themeToggler.addEventListener("click", () => {
-    const currentTheme = htmlElement.getAttribute("data-bs-theme");
+    const currentTheme = htmlElementetAttribute("data-bs-theme");
     const newTheme = currentTheme === "light" ? "dark" : "light";
     htmlElement.setAttribute("data-bs-theme", newTheme);
     localStorage.setItem("theme", newTheme);
