@@ -1,6 +1,0 @@
-- Logo image for Starcraft Agent (used in navbar and footer)
-- Dashboard preview screenshot representing the platform interface
-- Illustration for vision/mission sections
-- Placeholder images for team member portraits (founder, cofounders, etc.)
-- Placeholder images for blog post thumbnails and review/customer logos
-- Map or location graphic for contact page
