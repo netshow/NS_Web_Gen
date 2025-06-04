@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const themeToggler = document.getElementById("theme-toggler");
   const htmlElement = document.documentElement;
   const themeIcon = themeToggler ? themeToggler.querySelector("i") : null;
+
   const mainNavbar = document.getElementById("mainNavbar"); // Get the navbar
 
   // --- Theme Toggler ---
