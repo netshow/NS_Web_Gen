@@ -1,0 +1,6 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Case study illustration</title>
+  <rect width="320" height="200" fill="#EEF1FF" rx="24"/>
+  <rect x="60" y="52" width="200" height="96" rx="18" fill="#FFFFFF" stroke="#4A90E2" stroke-width="4"/>
+  <path d="M90 130c20-28 40-20 60-48 8-10 20-10 40 12" stroke="#F5A623" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

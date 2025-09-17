@@ -1,0 +1,7 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Blog illustration 1</title>
+  <rect width="320" height="200" fill="#EAF4FF" rx="24"/>
+  <path d="M40 150 L120 70 L170 110 L220 60 L280 130" stroke="#4A90E2" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="120" cy="70" r="10" fill="#F5A623"/>
+  <circle cx="220" cy="60" r="10" fill="#F5A623"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Playbook illustration</title>
+  <rect width="200" height="200" fill="#EAF6FF" rx="32"/>
+  <rect x="56" y="40" width="96" height="120" rx="16" fill="#FFFFFF" stroke="#4A90E2" stroke-width="4"/>
+  <line x1="56" y1="88" x2="152" y2="88" stroke="#F5A623" stroke-width="6"/>
+  <line x1="56" y1="120" x2="152" y2="120" stroke="#4A90E2" stroke-width="6"/>
+</svg>

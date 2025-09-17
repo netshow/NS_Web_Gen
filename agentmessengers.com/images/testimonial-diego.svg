@@ -1,0 +1,6 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Portrait placeholder of Diego</title>
+  <rect width="160" height="160" fill="#FFF4E6" rx="20"/>
+  <circle cx="80" cy="60" r="32" fill="#F5A623" opacity="0.8"/>
+  <path d="M40 132c8-24 32-32 40-32s32 8 40 32" fill="#4A90E2" opacity="0.6"/>
+</svg>

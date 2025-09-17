@@ -1,0 +1,7 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Blog illustration 3</title>
+  <rect width="320" height="200" fill="#E8F8F6" rx="24"/>
+  <rect x="48" y="48" width="224" height="40" rx="20" fill="#4A90E2" opacity="0.25"/>
+  <rect x="48" y="104" width="180" height="40" rx="20" fill="#F5A623" opacity="0.35"/>
+  <rect x="48" y="148" width="140" height="24" rx="12" fill="#4A90E2" opacity="0.2"/>
+</svg>
