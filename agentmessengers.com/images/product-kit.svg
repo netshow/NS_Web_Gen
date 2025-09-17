@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Field kit illustration</title>
+  <rect width="200" height="200" fill="#FFF2E5" rx="32"/>
+  <rect x="44" y="60" width="112" height="80" rx="20" fill="#FFFFFF" stroke="#F5A623" stroke-width="4"/>
+  <circle cx="84" cy="100" r="10" fill="#4A90E2"/>
+  <circle cx="116" cy="100" r="10" fill="#4A90E2"/>
+</svg>
