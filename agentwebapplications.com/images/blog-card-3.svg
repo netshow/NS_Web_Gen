@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title>Blog Illustration Placeholder</title>
+  <desc>Abstract waves for blog artwork.</desc>
+  <defs>
+    <linearGradient id="gradBlog3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f2241" />
+      <stop offset="100%" stop-color="#3a3ad1" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="220" rx="28" fill="url(#gradBlog3)" />
+  <path d="M0 160c40-28 120-20 180 0s140 24 180 0v60H0z" fill="#f87b56" opacity="0.3" />
+</svg>

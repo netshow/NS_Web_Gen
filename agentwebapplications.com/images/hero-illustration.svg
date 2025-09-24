@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-labelledby="title desc">
+  <title>Hero Illustration showing AI agents collaborating</title>
+  <desc>Stylized illustration of connected screens and AI avatars collaborating.</desc>
+  <rect width="520" height="420" rx="48" fill="#f6f2ff" />
+  <rect x="60" y="70" width="400" height="260" rx="32" fill="#3a3ad1" opacity="0.85" />
+  <rect x="96" y="110" width="180" height="120" rx="20" fill="#fff" opacity="0.85" />
+  <rect x="280" y="140" width="140" height="140" rx="28" fill="#1ab7c4" opacity="0.8" />
+  <circle cx="150" cy="170" r="28" fill="#3a3ad1" opacity="0.8" />
+  <circle cx="340" cy="190" r="36" fill="#f87b56" opacity="0.8" />
+  <circle cx="368" cy="260" r="18" fill="#fff" opacity="0.9" />
+  <circle cx="196" cy="226" r="18" fill="#fff" opacity="0.9" />
+  <path d="M178 182h40" stroke="#f87b56" stroke-width="8" stroke-linecap="round" opacity="0.8" />
+  <path d="M330 230h46" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.8" />
+  <path d="M220 140c24-36 72-36 96 0" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.4" />
+</svg>
