@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title>Product Demo Video Placeholder</title>
+  <desc>Placeholder graphic with play button.</desc>
+  <rect width="640" height="360" rx="32" fill="#1f2241" />
+  <rect x="40" y="40" width="560" height="280" rx="24" fill="#3a3ad1" opacity="0.85" />
+  <circle cx="320" cy="180" r="60" fill="#f87b56" opacity="0.9" />
+  <polygon points="304,150 356,180 304,210" fill="#fff" opacity="0.9" />
+</svg>

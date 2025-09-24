@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title>Team Member Placeholder</title>
+  <desc>Abstract avatar illustration with teal accents.</desc>
+  <defs>
+    <linearGradient id="gradTeam3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcf3ff" />
+      <stop offset="100%" stop-color="#f0fbff" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="32" fill="url(#gradTeam3)" />
+  <circle cx="120" cy="92" r="52" fill="#1ab7c4" opacity="0.9" />
+  <rect x="62" y="150" width="116" height="66" rx="32" fill="#1f2241" opacity="0.75" />
+  <circle cx="100" cy="86" r="12" fill="#fff" opacity="0.85" />
+  <circle cx="140" cy="86" r="12" fill="#fff" opacity="0.85" />
+  <path d="M100 122c12 10 28 10 40 0" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7" />
+</svg>

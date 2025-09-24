@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title>Blog Illustration Placeholder</title>
+  <desc>Abstract gradient card with diagonal pattern.</desc>
+  <defs>
+    <linearGradient id="gradBlog2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f87b56" />
+      <stop offset="100%" stop-color="#3a3ad1" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="220" rx="28" fill="url(#gradBlog2)" />
+  <g fill="rgba(255,255,255,0.22)">
+    <rect x="40" y="40" width="60" height="140" rx="16" />
+    <rect x="120" y="60" width="60" height="120" rx="16" />
+    <rect x="200" y="48" width="60" height="132" rx="16" />
+    <rect x="280" y="72" width="60" height="108" rx="16" />
+  </g>
+</svg>

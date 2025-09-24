@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 140 60" role="img" aria-labelledby="title desc">
+  <title>Media Logo Placeholder</title>
+  <desc>Rounded rectangle with stylized initials.</desc>
+  <rect width="140" height="60" rx="12" fill="#e6f8fa" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Poppins', Arial, sans-serif" font-weight="600" font-size="20" fill="#1ab7c4">CloudLab</text>
+</svg>
