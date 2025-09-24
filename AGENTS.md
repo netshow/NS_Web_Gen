@@ -1,41 +1,65 @@
-# Repository Guidelines  
+# Repository Guidelines
 
-This repository stores a collection of static web sites for different AI-related domains. Follow these rules when contributing:  
+This repository stores a collection of **static websites** for different AI-related domains. Follow these rules when contributing.
 
-## Structure & Files  
-- **Separate folders**: Each AI domain must reside in its own dedicated top-level folder within the repository.  
-- **Static only**: Use plain HTML, CSS, and JavaScript. Avoid using frameworks or build systems unless absolutely necessary.  
-- **Readmes**: Do not create a README.md file inside new domain folders.  
-- **Testing**: There are no automated tests. Verify pages load correctly in a browser before committing.  
+---
 
-## Content & Design  
-- **Reference Website Replication**: Each domain website should closely replicate a chosen reference website, with:  
-  - Updated content based on the specific business idea.  
-  - A slightly modified layout or structure to differentiate it from the original reference.  
-  - Maintain a similar tone and structure, but do not directly copy assets or text.  
+## 1) Structure & Files
+- **Separate folders:** Each AI domain must live in its own top-level folder.  
+- **Static only:** Use plain **HTML, CSS, and vanilla JavaScript**.  
+  - ❌ Do not use CSS/JS frameworks (e.g., Bootstrap, Tailwind), build systems, or icon fonts.  
+  - ✅ Use inline SVGs or local SVG files for icons.  
+- **Readmes:** **Do not** create a `README.md` inside new domain folders.  
+- **Testing:** No automated tests. Manually open pages in at least one modern desktop and one mobile browser to verify they load and behave correctly.  
 
-- **Unique Domain Identity**:  
-  - Ensure content in all `.html` and `.css` files reflects the specific AI domain/business idea.  
-  - Content must be substantially different from that of other domain folders (e.g., titles, descriptions, calls-to-action).  
-  - Each Title, Description, Text, and Icon must be updated according to the Domain and Business Idea.  
-  - Make sure content (Title, Text, Description, and Icons) is not the same as `agentide-website`.  
-  - Each page should have unique and different titles, descriptions, and icons according to the Business Idea and Domain provided.  
+---
 
-## Design Rules  
-- **Custom Color Palette**: Each domain must have a unique color palette, supporting both **light and dark modes** with proper contrast and legibility.  
-- **Modern & Professional Look**: Websites should use a more modern and professional-looking design across all pages and elements.  
-- **Distinct Layout**:  
-  - Design a layout that is visually and structurally different from other domain folders.  
-  - Examples include different:  
-    - Navigation styles  
-    - Font pairings  
-    - Grid systems  
-    - Section arrangements  
-- **Light & Dark Mode Support**: Every element, text, background, and component must adapt properly in both light and dark themes.  
-- **Placeholder Images**: Insert placeholder images where images are needed. These can later be replaced with actual images relevant to the domain.  
+## 2) Content & Design
+- **Reference Website Replication:**  
+  Each domain website should *closely* replicate a chosen public reference site’s overall *feel*, with:  
+  - Updated content aligned to the specific business idea.  
+  - A slightly modified layout/structure for differentiation.  
+  - A similar tone/structure, **without** copying assets or text verbatim.  
 
-## Pull Requests Should Include:  
-- Summary of changes.  
-- Mention of reference website used (if applicable).  
-- Manual verification steps (e.g., "Tested in Chrome/Firefox and mobile view").  
-- Confirmation that all guidelines above have been followed.  
+- **Unique Domain Identity:**  
+  - All text and visuals must reflect the specific AI domain/business idea.  
+  - Content must be substantially different from other domain folders (titles, descriptions, CTAs, imagery).  
+  - **Do not** reuse content, titles, text, or icons from `agentide-website`.  
+  - Each page requires unique titles, meta descriptions, and iconography tailored to the domain.  
+
+---
+
+## 3) Design Rules
+- **Custom Color Palette per Domain:**  
+  Each domain must define a unique color palette with tokens for both **light** and **dark** modes. Ensure proper contrast (WCAG AA+).  
+
+- **Modern & Professional Look:**  
+  Use clean typography, generous spacing, clear hierarchy, and accessible components.  
+
+- **Distinct Layout Across Domains:**  
+  Vary at least two of the following vs. other domain folders:  
+  - Navigation style  
+  - Font pairing  
+  - Grid system  
+  - Section arrangements  
+
+- **Light & Dark Mode Support:**  
+  Every element (text, backgrounds, cards, buttons, navs, forms) must switch correctly between themes via a site-wide toggle.  
+
+- **Icons & Images:**  
+  - Use **inline SVGs** or local `images/icons/*.svg`.  
+  - Use **placeholder images** where needed; replace later with domain-relevant assets.  
+
+---
+
+## 4) Pull Requests Must Include
+- **Summary of changes**  
+- **Reference site used** (URL) if applicable  
+- **Manual verification steps** (e.g., “Tested in Chrome 127 / Firefox 129; inspected responsive layout at 360px, 768px, 1280px.”)  
+- **Checklist confirming guidelines were followed**, including:  
+  - No frameworks/build tools used  
+  - Unique palette + dark mode implemented  
+  - Unique copy vs. other domains and `agentide-website`  
+  - Inline/local SVG icons only  
+  - All pages load and are responsive  
+  
